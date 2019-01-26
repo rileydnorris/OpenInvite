@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "97E9991AF7467C54DF31DCAE69EA299D"
+               BlueprintIdentifier = "9D5AA3673CC7DCF45535944BE51BAD84"
                BlueprintName = "Pods-OpenInvite"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "Pods-OpenInvite.framework">

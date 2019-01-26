@@ -10,6 +10,7 @@ target 'OpenInvite' do
 pod 'MaterialComponents/TextFields'
 pod 'Firebase'
 pod 'PINCache'
+pod 'SnapSDK'
 
 
   target 'OpenInviteTests' do
