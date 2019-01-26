@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FC7056CDB8E3F33629AA9AE /* Pods_OpenInviteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D17EA434A93E6A2FC9873A /* Pods_OpenInviteTests.framework */; };
+		CEC6543AF874BFF9701AC773 /* Pods_OpenInvite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8361AFE9AE09C218A998347 /* Pods_OpenInvite.framework */; };
+		EC3A00D6735218B3B101514B /* Pods_OpenInviteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A157B64C1BA4DFF4B0F5720 /* Pods_OpenInviteUITests.framework */; };
 		F698E51C21FCDF0500F9732E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F698E51B21FCDF0500F9732E /* AppDelegate.swift */; };
 		F698E51E21FCDF0500F9732E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F698E51D21FCDF0500F9732E /* ViewController.swift */; };
 		F698E52121FCDF0500F9732E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F698E51F21FCDF0500F9732E /* Main.storyboard */; };
@@ -35,6 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		187BFE8EC65F52B6D218DD94 /* Pods-OpenInviteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenInviteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenInviteTests/Pods-OpenInviteTests.release.xcconfig"; sourceTree = "<group>"; };
+		1A157B64C1BA4DFF4B0F5720 /* Pods_OpenInviteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenInviteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41D17EA434A93E6A2FC9873A /* Pods_OpenInviteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenInviteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69502292C5C8733F74D05227 /* Pods-OpenInvite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenInvite.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenInvite/Pods-OpenInvite.release.xcconfig"; sourceTree = "<group>"; };
+		84D86801BB6D49BECFA0A83E /* Pods-OpenInviteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenInviteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenInviteTests/Pods-OpenInviteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8733DF1EDC81AD67384050FB /* Pods-OpenInviteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenInviteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenInviteUITests/Pods-OpenInviteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A8361AFE9AE09C218A998347 /* Pods_OpenInvite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenInvite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B095F07A28A826511E29490E /* Pods-OpenInviteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenInviteUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenInviteUITests/Pods-OpenInviteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB9EEBF3F281BE9E35DF7913 /* Pods-OpenInvite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenInvite.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenInvite/Pods-OpenInvite.debug.xcconfig"; sourceTree = "<group>"; };
 		F698E51821FCDF0500F9732E /* OpenInvite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenInvite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F698E51B21FCDF0500F9732E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F698E51D21FCDF0500F9732E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC6543AF874BFF9701AC773 /* Pods_OpenInvite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FC7056CDB8E3F33629AA9AE /* Pods_OpenInviteTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC3A00D6735218B3B101514B /* Pods_OpenInviteUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2300A1D69D7E19BE758BAE68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB9EEBF3F281BE9E35DF7913 /* Pods-OpenInvite.debug.xcconfig */,
+				69502292C5C8733F74D05227 /* Pods-OpenInvite.release.xcconfig */,
+				84D86801BB6D49BECFA0A83E /* Pods-OpenInviteTests.debug.xcconfig */,
+				187BFE8EC65F52B6D218DD94 /* Pods-OpenInviteTests.release.xcconfig */,
+				B095F07A28A826511E29490E /* Pods-OpenInviteUITests.debug.xcconfig */,
+				8733DF1EDC81AD67384050FB /* Pods-OpenInviteUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4ED79E38B814AC86F0310DBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8361AFE9AE09C218A998347 /* Pods_OpenInvite.framework */,
+				41D17EA434A93E6A2FC9873A /* Pods_OpenInviteTests.framework */,
+				1A157B64C1BA4DFF4B0F5720 /* Pods_OpenInviteUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F698E50F21FCDF0500F9732E = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +121,8 @@
 				F698E53221FCDF0700F9732E /* OpenInviteTests */,
 				F698E53D21FCDF0700F9732E /* OpenInviteUITests */,
 				F698E51921FCDF0500F9732E /* Products */,
+				2300A1D69D7E19BE758BAE68 /* Pods */,
+				4ED79E38B814AC86F0310DBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,9 +183,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F698E54321FCDF0700F9732E /* Build configuration list for PBXNativeTarget "OpenInvite" */;
 			buildPhases = (
+				707FB453E108D8474C5236F2 /* [CP] Check Pods Manifest.lock */,
 				F698E51421FCDF0500F9732E /* Sources */,
 				F698E51521FCDF0500F9732E /* Frameworks */,
 				F698E51621FCDF0500F9732E /* Resources */,
+				1DA28D080C03D233615BA57D /* [CP] Embed Pods Frameworks */,
+				F42C455D94E8B16BFDDE35B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,9 +203,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F698E54621FCDF0700F9732E /* Build configuration list for PBXNativeTarget "OpenInviteTests" */;
 			buildPhases = (
+				03A7BDD673B515FD123C81A2 /* [CP] Check Pods Manifest.lock */,
 				F698E52B21FCDF0700F9732E /* Sources */,
 				F698E52C21FCDF0700F9732E /* Frameworks */,
 				F698E52D21FCDF0700F9732E /* Resources */,
+				F652A998D9F29C3BFE217DD8 /* [CP] Embed Pods Frameworks */,
+				A9CF38E410166F68695C5747 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,9 +224,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F698E54921FCDF0700F9732E /* Build configuration list for PBXNativeTarget "OpenInviteUITests" */;
 			buildPhases = (
+				E93A199C772ABC144E5D1E30 /* [CP] Check Pods Manifest.lock */,
 				F698E53621FCDF0700F9732E /* Sources */,
 				F698E53721FCDF0700F9732E /* Frameworks */,
 				F698E53821FCDF0700F9732E /* Resources */,
+				E0D5504CD11EB265A2ECCDCD /* [CP] Embed Pods Frameworks */,
+				38A9F609C87C9AF3A08199DB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,6 +310,164 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03A7BDD673B515FD123C81A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenInviteTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DA28D080C03D233615BA57D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OpenInvite/Pods-OpenInvite-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInvite/Pods-OpenInvite-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38A9F609C87C9AF3A08199DB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInviteUITests/Pods-OpenInviteUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		707FB453E108D8474C5236F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenInvite-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9CF38E410166F68695C5747 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInviteTests/Pods-OpenInviteTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0D5504CD11EB265A2ECCDCD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInviteUITests/Pods-OpenInviteUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E93A199C772ABC144E5D1E30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenInviteUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F42C455D94E8B16BFDDE35B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInvite/Pods-OpenInvite-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F652A998D9F29C3BFE217DD8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInviteTests/Pods-OpenInviteTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F698E51421FCDF0500F9732E /* Sources */ = {
@@ -442,15 +649,13 @@
 		};
 		F698E54421FCDF0700F9732E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB9EEBF3F281BE9E35DF7913 /* Pods-OpenInvite.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 764FG2R9VZ;
 				INFOPLIST_FILE = OpenInvite/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "riley-norris.OpenInvite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -460,15 +665,13 @@
 		};
 		F698E54521FCDF0700F9732E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69502292C5C8733F74D05227 /* Pods-OpenInvite.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 764FG2R9VZ;
 				INFOPLIST_FILE = OpenInvite/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "riley-norris.OpenInvite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -478,17 +681,14 @@
 		};
 		F698E54721FCDF0700F9732E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84D86801BB6D49BECFA0A83E /* Pods-OpenInviteTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 764FG2R9VZ;
 				INFOPLIST_FILE = OpenInviteTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "riley-norris.OpenInviteTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -499,17 +699,14 @@
 		};
 		F698E54821FCDF0700F9732E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 187BFE8EC65F52B6D218DD94 /* Pods-OpenInviteTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 764FG2R9VZ;
 				INFOPLIST_FILE = OpenInviteTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "riley-norris.OpenInviteTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -520,16 +717,13 @@
 		};
 		F698E54A21FCDF0700F9732E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B095F07A28A826511E29490E /* Pods-OpenInviteUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 764FG2R9VZ;
 				INFOPLIST_FILE = OpenInviteUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "riley-norris.OpenInviteUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -540,16 +734,13 @@
 		};
 		F698E54B21FCDF0700F9732E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8733DF1EDC81AD67384050FB /* Pods-OpenInviteUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 764FG2R9VZ;
 				INFOPLIST_FILE = OpenInviteUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "riley-norris.OpenInviteUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

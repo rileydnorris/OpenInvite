@@ -1,0 +1,6 @@
+framework module Pods_OpenInviteUITests {
+  umbrella header "Pods-OpenInviteUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
