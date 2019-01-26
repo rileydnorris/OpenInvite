@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0FC7056CDB8E3F33629AA9AE /* Pods_OpenInviteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D17EA434A93E6A2FC9873A /* Pods_OpenInviteTests.framework */; };
 		CEC6543AF874BFF9701AC773 /* Pods_OpenInvite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8361AFE9AE09C218A998347 /* Pods_OpenInvite.framework */; };
+		D9F75BFD21FCF1EE00B6D12C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9F75BFC21FCF1EE00B6D12C /* GoogleService-Info.plist */; };
 		EC3A00D6735218B3B101514B /* Pods_OpenInviteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A157B64C1BA4DFF4B0F5720 /* Pods_OpenInviteUITests.framework */; };
 		F698E51C21FCDF0500F9732E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F698E51B21FCDF0500F9732E /* AppDelegate.swift */; };
 		F698E51E21FCDF0500F9732E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F698E51D21FCDF0500F9732E /* ViewController.swift */; };
@@ -46,6 +47,7 @@
 		8733DF1EDC81AD67384050FB /* Pods-OpenInviteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenInviteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenInviteUITests/Pods-OpenInviteUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A8361AFE9AE09C218A998347 /* Pods_OpenInvite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenInvite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B095F07A28A826511E29490E /* Pods-OpenInviteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenInviteUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenInviteUITests/Pods-OpenInviteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D9F75BFC21FCF1EE00B6D12C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EB9EEBF3F281BE9E35DF7913 /* Pods-OpenInvite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenInvite.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenInvite/Pods-OpenInvite.debug.xcconfig"; sourceTree = "<group>"; };
 		F698E51821FCDF0500F9732E /* OpenInvite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenInvite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F698E51B21FCDF0500F9732E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 		F698E51A21FCDF0500F9732E /* OpenInvite */ = {
 			isa = PBXGroup;
 			children = (
+				D9F75BFC21FCF1EE00B6D12C /* GoogleService-Info.plist */,
 				F698E52A21FCDF0700F9732E /* Info.plist */,
 				F698E54C21FCDF1D00F9732E /* Utilities */,
 				F698E51D21FCDF0500F9732E /* ViewController.swift */,
@@ -290,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F698E52921FCDF0700F9732E /* LaunchScreen.storyboard in Resources */,
+				D9F75BFD21FCF1EE00B6D12C /* GoogleService-Info.plist in Resources */,
 				F698E52621FCDF0700F9732E /* Assets.xcassets in Resources */,
 				F698E52121FCDF0500F9732E /* Main.storyboard in Resources */,
 			);
@@ -655,7 +659,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 764FG2R9VZ;
 				INFOPLIST_FILE = OpenInvite/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "riley-norris.OpenInvite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -671,7 +678,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 764FG2R9VZ;
 				INFOPLIST_FILE = OpenInvite/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "riley-norris.OpenInvite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -688,7 +698,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 764FG2R9VZ;
 				INFOPLIST_FILE = OpenInviteTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "riley-norris.OpenInviteTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -706,7 +720,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 764FG2R9VZ;
 				INFOPLIST_FILE = OpenInviteTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "riley-norris.OpenInviteTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -723,7 +741,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 764FG2R9VZ;
 				INFOPLIST_FILE = OpenInviteUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "riley-norris.OpenInviteUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -740,7 +762,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 764FG2R9VZ;
 				INFOPLIST_FILE = OpenInviteUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "riley-norris.OpenInviteUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
