@@ -19,5 +19,5 @@ DerivedData
 profile
 
 # dependency
-Pods/
+*Pods/
 Carthage/
