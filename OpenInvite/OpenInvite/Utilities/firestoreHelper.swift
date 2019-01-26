@@ -34,8 +34,8 @@ func setDocument(_ collectionName : String, _ id : String, _ data : [String : An
 }
 
 func getDocumentByID(_ collectionName : String, _ userID : String, completion: @escaping (DocumentSnapshot?, Error?) -> Void) {
-    let userDocRef: DocumentReference = db.collection("users").document(userID)
-    userDocRef.getDocument( completion: completion )
+    let docRef: DocumentReference = db.collection("users").document(userID)
+    docRef.getDocument( completion: completion )
 //        { (document, error) in
 //        if let document = document, document.exists {
 //            let data = document.data() ?? nil
@@ -44,7 +44,13 @@ func getDocumentByID(_ collectionName : String, _ userID : String, completion: @
 //        } else {
 //            print("Document does not exist")
 //        }
-    }
-//}
+//    }
+}
+
+
+func getCollectionDocuments(_ collectionName : String, completion: @escaping (QuerySnapshot?, Error?) -> Void) {
+    let collectRef: CollectionReference = db.collection(collectionName)
+    collectRef.getDocuments( completion: completion )
+}
 
 
