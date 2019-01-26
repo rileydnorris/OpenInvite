@@ -41,5 +41,33 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>riley-norris.OpenInvite</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>oinvite</string>
+			</array>
+		</dict>
+	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>snapchat</string>
+		<string>bitmoji-sdk</string>
+		<string>itms-apps</string>
+		<string>example (Change this)</string>
+	</array>
+	<key>SCSDKClientId</key>
+	<string>1e8d916e-314d-409d-a2b5-7ea152db92bc</string>
+	<key>SCSDKRedirectUrl</key>
+	<string>oinvite://snapchat</string>
+	<key>SCSDKScopes</key>
+	<array>
+		<string>https://auth.snapchat.com/oauth2/api/user.external_id</string>
+		<string>https://auth.snapchat.com/oauth2/api/user.display_name</string>
+		<string>https://auth.snapchat.com/oauth2/api/user.bitmoji.avatar</string>
+	</array>
 </dict>
 </plist>

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0FC7056CDB8E3F33629AA9AE /* Pods_OpenInviteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D17EA434A93E6A2FC9873A /* Pods_OpenInviteTests.framework */; };
 		CEC6543AF874BFF9701AC773 /* Pods_OpenInvite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8361AFE9AE09C218A998347 /* Pods_OpenInvite.framework */; };
-		D9F75BFD21FCF1EE00B6D12C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9F75BFC21FCF1EE00B6D12C /* GoogleService-Info.plist */; };
 		EC3A00D6735218B3B101514B /* Pods_OpenInviteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A157B64C1BA4DFF4B0F5720 /* Pods_OpenInviteUITests.framework */; };
 		F698E51C21FCDF0500F9732E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F698E51B21FCDF0500F9732E /* AppDelegate.swift */; };
 		F698E51E21FCDF0500F9732E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F698E51D21FCDF0500F9732E /* ViewController.swift */; };
@@ -19,6 +18,20 @@
 		F698E52921FCDF0700F9732E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F698E52721FCDF0700F9732E /* LaunchScreen.storyboard */; };
 		F698E53421FCDF0700F9732E /* OpenInviteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F698E53321FCDF0700F9732E /* OpenInviteTests.swift */; };
 		F698E53F21FCDF0700F9732E /* OpenInviteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F698E53E21FCDF0700F9732E /* OpenInviteUITests.swift */; };
+		F6D2030F21FCFAD80014AAEC /* Pods_OpenInvite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8361AFE9AE09C218A998347 /* Pods_OpenInvite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F6D2031021FCFAD80014AAEC /* Pods_OpenInviteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D17EA434A93E6A2FC9873A /* Pods_OpenInviteTests.framework */; };
+		F6D2031121FCFAD80014AAEC /* Pods_OpenInviteTests.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41D17EA434A93E6A2FC9873A /* Pods_OpenInviteTests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F6D2031221FCFAD80014AAEC /* Pods_OpenInviteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A157B64C1BA4DFF4B0F5720 /* Pods_OpenInviteUITests.framework */; };
+		F6D2031321FCFAD80014AAEC /* Pods_OpenInviteUITests.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A157B64C1BA4DFF4B0F5720 /* Pods_OpenInviteUITests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F6D2031721FCFB5D0014AAEC /* SCSDKBitmojiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F321FCFAC30014AAEC /* SCSDKBitmojiKit.framework */; };
+		F6D2031821FCFB5D0014AAEC /* SCSDKBitmojiKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F321FCFAC30014AAEC /* SCSDKBitmojiKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F6D2031921FCFB5D0014AAEC /* SCSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F221FCFAC30014AAEC /* SCSDKCoreKit.framework */; };
+		F6D2031A21FCFB5D0014AAEC /* SCSDKCoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F221FCFAC30014AAEC /* SCSDKCoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F6D2031B21FCFB5D0014AAEC /* SCSDKCreativeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F421FCFAC30014AAEC /* SCSDKCreativeKit.framework */; };
+		F6D2031C21FCFB5D0014AAEC /* SCSDKCreativeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F421FCFAC30014AAEC /* SCSDKCreativeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F6D2031D21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F521FCFAC30014AAEC /* SCSDKLoginKit.framework */; };
+		F6D2031E21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F521FCFAC30014AAEC /* SCSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F6D2032121FCFF410014AAEC /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D2032021FCFF410014AAEC /* GoogleUtilities.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +50,26 @@
 			remoteInfo = OpenInvite;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F6D202FE21FCFAC40014AAEC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F6D2031321FCFAD80014AAEC /* Pods_OpenInviteUITests.framework in Embed Frameworks */,
+				F6D2030F21FCFAD80014AAEC /* Pods_OpenInvite.framework in Embed Frameworks */,
+				F6D2031121FCFAD80014AAEC /* Pods_OpenInviteTests.framework in Embed Frameworks */,
+				F6D2031821FCFB5D0014AAEC /* SCSDKBitmojiKit.framework in Embed Frameworks */,
+				F6D2031A21FCFB5D0014AAEC /* SCSDKCoreKit.framework in Embed Frameworks */,
+				F6D2031E21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Embed Frameworks */,
+				F6D2031C21FCFB5D0014AAEC /* SCSDKCreativeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		187BFE8EC65F52B6D218DD94 /* Pods-OpenInviteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenInviteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenInviteTests/Pods-OpenInviteTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,6 +96,11 @@
 		F698E53A21FCDF0700F9732E /* OpenInviteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenInviteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F698E53E21FCDF0700F9732E /* OpenInviteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenInviteUITests.swift; sourceTree = "<group>"; };
 		F698E54021FCDF0700F9732E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6D202F221FCFAC30014AAEC /* SCSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKCoreKit.framework; sourceTree = "<group>"; };
+		F6D202F321FCFAC30014AAEC /* SCSDKBitmojiKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKBitmojiKit.framework; sourceTree = "<group>"; };
+		F6D202F421FCFAC30014AAEC /* SCSDKCreativeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKCreativeKit.framework; sourceTree = "<group>"; };
+		F6D202F521FCFAC30014AAEC /* SCSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKLoginKit.framework; sourceTree = "<group>"; };
+		F6D2032021FCFF410014AAEC /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +108,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6D2032121FCFF410014AAEC /* GoogleUtilities.framework in Frameworks */,
+				F6D2031721FCFB5D0014AAEC /* SCSDKBitmojiKit.framework in Frameworks */,
+				F6D2031B21FCFB5D0014AAEC /* SCSDKCreativeKit.framework in Frameworks */,
+				F6D2031221FCFAD80014AAEC /* Pods_OpenInviteUITests.framework in Frameworks */,
+				F6D2031021FCFAD80014AAEC /* Pods_OpenInviteTests.framework in Frameworks */,
+				F6D2031D21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Frameworks */,
 				CEC6543AF874BFF9701AC773 /* Pods_OpenInvite.framework in Frameworks */,
+				F6D2031921FCFB5D0014AAEC /* SCSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +154,11 @@
 		4ED79E38B814AC86F0310DBF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F6D2032021FCFF410014AAEC /* GoogleUtilities.framework */,
+				F6D202F321FCFAC30014AAEC /* SCSDKBitmojiKit.framework */,
+				F6D202F221FCFAC30014AAEC /* SCSDKCoreKit.framework */,
+				F6D202F421FCFAC30014AAEC /* SCSDKCreativeKit.framework */,
+				F6D202F521FCFAC30014AAEC /* SCSDKLoginKit.framework */,
 				A8361AFE9AE09C218A998347 /* Pods_OpenInvite.framework */,
 				41D17EA434A93E6A2FC9873A /* Pods_OpenInviteTests.framework */,
 				1A157B64C1BA4DFF4B0F5720 /* Pods_OpenInviteUITests.framework */,
@@ -171,12 +221,20 @@
 		F698E54C21FCDF1D00F9732E /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				F698E52221FCDF0500F9732E /* OpenInvite.xcdatamodeld */,
+				F6D2031F21FCFB950014AAEC /* Etc */,
 				F698E51B21FCDF0500F9732E /* AppDelegate.swift */,
 				F698E52521FCDF0700F9732E /* Assets.xcassets */,
-				F698E52721FCDF0700F9732E /* LaunchScreen.storyboard */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F6D2031F21FCFB950014AAEC /* Etc */ = {
+			isa = PBXGroup;
+			children = (
+				F698E52721FCDF0700F9732E /* LaunchScreen.storyboard */,
+				F698E52221FCDF0500F9732E /* OpenInvite.xcdatamodeld */,
+			);
+			path = Etc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +250,7 @@
 				F698E51621FCDF0500F9732E /* Resources */,
 				1DA28D080C03D233615BA57D /* [CP] Embed Pods Frameworks */,
 				F42C455D94E8B16BFDDE35B1 /* [CP] Copy Pods Resources */,
+				F6D202FE21FCFAC40014AAEC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -293,7 +352,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F698E52921FCDF0700F9732E /* LaunchScreen.storyboard in Resources */,
-				D9F75BFD21FCF1EE00B6D12C /* GoogleService-Info.plist in Resources */,
 				F698E52621FCDF0700F9732E /* Assets.xcassets in Resources */,
 				F698E52121FCDF0500F9732E /* Main.storyboard in Resources */,
 			);
@@ -346,10 +404,6 @@
 				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
 				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
 				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
-				"${PODS_ROOT}/SnapSDK/SCSDKBitmojiKit.framework",
-				"${PODS_ROOT}/SnapSDK/SCSDKCoreKit.framework",
-				"${PODS_ROOT}/SnapSDK/SCSDKCreativeKit.framework",
-				"${PODS_ROOT}/SnapSDK/SCSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -360,10 +414,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCSDKBitmojiKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCSDKCreativeKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -670,6 +720,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 764FG2R9VZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/SnapSDK",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = OpenInvite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -689,6 +744,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 764FG2R9VZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/SnapSDK",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = OpenInvite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
