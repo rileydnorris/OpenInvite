@@ -8,8 +8,12 @@
 
 import UIKit
 import CoreData
+
 import Firebase
 
+
+
+import SCSDKLoginKit
 
 
 @UIApplicationMain
@@ -21,9 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-        getDocumentByID("users", "marSt6kcgXeLddRJfkcP") { (document, error) in
-            print(document!.data())
-        }
+//        getDocumentByID("users", "marSt6kcgXeLddRJfkcP") { (document, error) in
+//            print(document!.data())
+//        }
         return true
     }
 
@@ -49,6 +53,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
+    }
+    
+    /// Handling redirect of snapchat's login
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        if SCSDKLoginClient.application(app, open: url, options: options) {
+            return true
+        }
+        return true
     }
 
     // MARK: - Core Data stack

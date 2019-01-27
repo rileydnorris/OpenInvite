@@ -9,17 +9,38 @@
 /* Begin PBXBuildFile section */
 		0FC7056CDB8E3F33629AA9AE /* Pods_OpenInviteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D17EA434A93E6A2FC9873A /* Pods_OpenInviteTests.framework */; };
 		CEC6543AF874BFF9701AC773 /* Pods_OpenInvite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8361AFE9AE09C218A998347 /* Pods_OpenInvite.framework */; };
+		D960D55621FD2D2300DE74F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D960D55421FD2D2300DE74F2 /* LaunchScreen.storyboard */; };
+		D960D55821FD2E9200DE74F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D960D55721FD2E9200DE74F2 /* GoogleService-Info.plist */; };
 		D9BBF4A621FD073000AEFC89 /* firestoreHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BBF4A521FD073000AEFC89 /* firestoreHelper.swift */; };
-		D9F75BFD21FCF1EE00B6D12C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9F75BFC21FCF1EE00B6D12C /* GoogleService-Info.plist */; };
 		EC3A00D6735218B3B101514B /* Pods_OpenInviteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A157B64C1BA4DFF4B0F5720 /* Pods_OpenInviteUITests.framework */; };
 		F698E51C21FCDF0500F9732E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F698E51B21FCDF0500F9732E /* AppDelegate.swift */; };
-		F698E51E21FCDF0500F9732E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F698E51D21FCDF0500F9732E /* ViewController.swift */; };
+		F698E51E21FCDF0500F9732E /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F698E51D21FCDF0500F9732E /* LogInController.swift */; };
 		F698E52121FCDF0500F9732E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F698E51F21FCDF0500F9732E /* Main.storyboard */; };
 		F698E52421FCDF0500F9732E /* OpenInvite.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F698E52221FCDF0500F9732E /* OpenInvite.xcdatamodeld */; };
 		F698E52621FCDF0700F9732E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F698E52521FCDF0700F9732E /* Assets.xcassets */; };
-		F698E52921FCDF0700F9732E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F698E52721FCDF0700F9732E /* LaunchScreen.storyboard */; };
 		F698E53421FCDF0700F9732E /* OpenInviteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F698E53321FCDF0700F9732E /* OpenInviteTests.swift */; };
 		F698E53F21FCDF0700F9732E /* OpenInviteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F698E53E21FCDF0700F9732E /* OpenInviteUITests.swift */; };
+		F6D2030F21FCFAD80014AAEC /* Pods_OpenInvite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8361AFE9AE09C218A998347 /* Pods_OpenInvite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F6D2031021FCFAD80014AAEC /* Pods_OpenInviteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D17EA434A93E6A2FC9873A /* Pods_OpenInviteTests.framework */; };
+		F6D2031121FCFAD80014AAEC /* Pods_OpenInviteTests.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41D17EA434A93E6A2FC9873A /* Pods_OpenInviteTests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F6D2031221FCFAD80014AAEC /* Pods_OpenInviteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A157B64C1BA4DFF4B0F5720 /* Pods_OpenInviteUITests.framework */; };
+		F6D2031321FCFAD80014AAEC /* Pods_OpenInviteUITests.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A157B64C1BA4DFF4B0F5720 /* Pods_OpenInviteUITests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F6D2031721FCFB5D0014AAEC /* SCSDKBitmojiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F321FCFAC30014AAEC /* SCSDKBitmojiKit.framework */; };
+		F6D2031821FCFB5D0014AAEC /* SCSDKBitmojiKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F321FCFAC30014AAEC /* SCSDKBitmojiKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F6D2031921FCFB5D0014AAEC /* SCSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F221FCFAC30014AAEC /* SCSDKCoreKit.framework */; };
+		F6D2031A21FCFB5D0014AAEC /* SCSDKCoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F221FCFAC30014AAEC /* SCSDKCoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F6D2031B21FCFB5D0014AAEC /* SCSDKCreativeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F421FCFAC30014AAEC /* SCSDKCreativeKit.framework */; };
+		F6D2031C21FCFB5D0014AAEC /* SCSDKCreativeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F421FCFAC30014AAEC /* SCSDKCreativeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F6D2031D21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F521FCFAC30014AAEC /* SCSDKLoginKit.framework */; };
+		F6D2031E21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F521FCFAC30014AAEC /* SCSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F6D2032121FCFF410014AAEC /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D2032021FCFF410014AAEC /* GoogleUtilities.framework */; };
+		F6D2032321FD03670014AAEC /* Snapchat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2032221FD03670014AAEC /* Snapchat.swift */; };
+		F6D2032521FD0A720014AAEC /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2032421FD0A720014AAEC /* FeedController.swift */; };
+		F6D2032721FD11F30014AAEC /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2032621FD11F30014AAEC /* Constraints.swift */; };
+		F6D2032921FD16890014AAEC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2032821FD16890014AAEC /* Extensions.swift */; };
+		F6D2032F21FD17770014AAEC /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2032E21FD17770014AAEC /* FeedCell.swift */; };
+		F6D2033421FD1F530014AAEC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2033321FD1F530014AAEC /* User.swift */; };
+		F6D2033621FD1F960014AAEC /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2033521FD1F960014AAEC /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +60,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F6D202FE21FCFAC40014AAEC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F6D2031321FCFAD80014AAEC /* Pods_OpenInviteUITests.framework in Embed Frameworks */,
+				F6D2030F21FCFAD80014AAEC /* Pods_OpenInvite.framework in Embed Frameworks */,
+				F6D2031121FCFAD80014AAEC /* Pods_OpenInviteTests.framework in Embed Frameworks */,
+				F6D2031821FCFB5D0014AAEC /* SCSDKBitmojiKit.framework in Embed Frameworks */,
+				F6D2031A21FCFB5D0014AAEC /* SCSDKCoreKit.framework in Embed Frameworks */,
+				F6D2031E21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Embed Frameworks */,
+				F6D2031C21FCFB5D0014AAEC /* SCSDKCreativeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		187BFE8EC65F52B6D218DD94 /* Pods-OpenInviteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenInviteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenInviteTests/Pods-OpenInviteTests.release.xcconfig"; sourceTree = "<group>"; };
 		1A157B64C1BA4DFF4B0F5720 /* Pods_OpenInviteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenInviteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,13 +89,14 @@
 		8733DF1EDC81AD67384050FB /* Pods-OpenInviteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenInviteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenInviteUITests/Pods-OpenInviteUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A8361AFE9AE09C218A998347 /* Pods_OpenInvite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenInvite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B095F07A28A826511E29490E /* Pods-OpenInviteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenInviteUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenInviteUITests/Pods-OpenInviteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D960D55521FD2D2300DE74F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D960D55721FD2E9200DE74F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D9BBF4A521FD073000AEFC89 /* firestoreHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firestoreHelper.swift; sourceTree = "<group>"; };
 		D9DC77AA21FCFDC500D0D693 /* Firebase */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Firebase; path = Pods/Firebase; sourceTree = "<group>"; };
-		D9F75BFC21FCF1EE00B6D12C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EB9EEBF3F281BE9E35DF7913 /* Pods-OpenInvite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenInvite.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenInvite/Pods-OpenInvite.debug.xcconfig"; sourceTree = "<group>"; };
 		F698E51821FCDF0500F9732E /* OpenInvite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenInvite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F698E51B21FCDF0500F9732E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F698E51D21FCDF0500F9732E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F698E51D21FCDF0500F9732E /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
 		F698E52021FCDF0500F9732E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F698E52321FCDF0500F9732E /* OpenInvite.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpenInvite.xcdatamodel; sourceTree = "<group>"; };
 		F698E52521FCDF0700F9732E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,6 +108,18 @@
 		F698E53A21FCDF0700F9732E /* OpenInviteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenInviteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F698E53E21FCDF0700F9732E /* OpenInviteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenInviteUITests.swift; sourceTree = "<group>"; };
 		F698E54021FCDF0700F9732E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6D202F221FCFAC30014AAEC /* SCSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKCoreKit.framework; sourceTree = "<group>"; };
+		F6D202F321FCFAC30014AAEC /* SCSDKBitmojiKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKBitmojiKit.framework; sourceTree = "<group>"; };
+		F6D202F421FCFAC30014AAEC /* SCSDKCreativeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKCreativeKit.framework; sourceTree = "<group>"; };
+		F6D202F521FCFAC30014AAEC /* SCSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKLoginKit.framework; sourceTree = "<group>"; };
+		F6D2032021FCFF410014AAEC /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6D2032221FD03670014AAEC /* Snapchat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapchat.swift; sourceTree = "<group>"; };
+		F6D2032421FD0A720014AAEC /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		F6D2032621FD11F30014AAEC /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		F6D2032821FD16890014AAEC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F6D2032E21FD17770014AAEC /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		F6D2033321FD1F530014AAEC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F6D2033521FD1F960014AAEC /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +127,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6D2032121FCFF410014AAEC /* GoogleUtilities.framework in Frameworks */,
+				F6D2031721FCFB5D0014AAEC /* SCSDKBitmojiKit.framework in Frameworks */,
+				F6D2031B21FCFB5D0014AAEC /* SCSDKCreativeKit.framework in Frameworks */,
+				F6D2031221FCFAD80014AAEC /* Pods_OpenInviteUITests.framework in Frameworks */,
+				F6D2031021FCFAD80014AAEC /* Pods_OpenInviteTests.framework in Frameworks */,
+				F6D2031D21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Frameworks */,
 				CEC6543AF874BFF9701AC773 /* Pods_OpenInvite.framework in Frameworks */,
+				F6D2031921FCFB5D0014AAEC /* SCSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +174,11 @@
 			isa = PBXGroup;
 			children = (
 				D9DC77AA21FCFDC500D0D693 /* Firebase */,
+				F6D2032021FCFF410014AAEC /* GoogleUtilities.framework */,
+				F6D202F321FCFAC30014AAEC /* SCSDKBitmojiKit.framework */,
+				F6D202F221FCFAC30014AAEC /* SCSDKCoreKit.framework */,
+				F6D202F421FCFAC30014AAEC /* SCSDKCreativeKit.framework */,
+				F6D202F521FCFAC30014AAEC /* SCSDKLoginKit.framework */,
 				A8361AFE9AE09C218A998347 /* Pods_OpenInvite.framework */,
 				41D17EA434A93E6A2FC9873A /* Pods_OpenInviteTests.framework */,
 				1A157B64C1BA4DFF4B0F5720 /* Pods_OpenInviteUITests.framework */,
@@ -145,11 +211,13 @@
 		F698E51A21FCDF0500F9732E /* OpenInvite */ = {
 			isa = PBXGroup;
 			children = (
-				D9F75BFC21FCF1EE00B6D12C /* GoogleService-Info.plist */,
+				D960D55721FD2E9200DE74F2 /* GoogleService-Info.plist */,
 				F698E52A21FCDF0700F9732E /* Info.plist */,
 				F698E54C21FCDF1D00F9732E /* Utilities */,
-				F698E51D21FCDF0500F9732E /* ViewController.swift */,
-				F698E51F21FCDF0500F9732E /* Main.storyboard */,
+				F6D2032B21FD17340014AAEC /* Storyboards */,
+				F6D2032C21FD174C0014AAEC /* LogIn */,
+				F6D2032A21FD17210014AAEC /* Feed */,
+				F6D2033221FD1F390014AAEC /* Models */,
 			);
 			path = OpenInvite;
 			sourceTree = "<group>";
@@ -175,13 +243,67 @@
 		F698E54C21FCDF1D00F9732E /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				F698E52221FCDF0500F9732E /* OpenInvite.xcdatamodeld */,
+				F6D2031F21FCFB950014AAEC /* Etc */,
 				F698E51B21FCDF0500F9732E /* AppDelegate.swift */,
 				F698E52521FCDF0700F9732E /* Assets.xcassets */,
 				F698E52721FCDF0700F9732E /* LaunchScreen.storyboard */,
 				D9BBF4A521FD073000AEFC89 /* firestoreHelper.swift */,
+				F6D2032821FD16890014AAEC /* Extensions.swift */,
+				F6D2032621FD11F30014AAEC /* Constraints.swift */,
+				F6D2032221FD03670014AAEC /* Snapchat.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F6D2031F21FCFB950014AAEC /* Etc */ = {
+			isa = PBXGroup;
+			children = (
+				D960D55421FD2D2300DE74F2 /* LaunchScreen.storyboard */,
+				F698E52221FCDF0500F9732E /* OpenInvite.xcdatamodeld */,
+			);
+			path = Etc;
+			sourceTree = "<group>";
+		};
+		F6D2032A21FD17210014AAEC /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				F6D2032D21FD175D0014AAEC /* Cells */,
+				F6D2032421FD0A720014AAEC /* FeedController.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		F6D2032B21FD17340014AAEC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F698E51F21FCDF0500F9732E /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F6D2032C21FD174C0014AAEC /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				F698E51D21FCDF0500F9732E /* LogInController.swift */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		F6D2032D21FD175D0014AAEC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F6D2032E21FD17770014AAEC /* FeedCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F6D2033221FD1F390014AAEC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F6D2033321FD1F530014AAEC /* User.swift */,
+				F6D2033521FD1F960014AAEC /* Event.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +318,7 @@
 				F698E51521FCDF0500F9732E /* Frameworks */,
 				F698E51621FCDF0500F9732E /* Resources */,
 				1DA28D080C03D233615BA57D /* [CP] Embed Pods Frameworks */,
+				F6D202FE21FCFAC40014AAEC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -292,8 +415,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F698E52921FCDF0700F9732E /* LaunchScreen.storyboard in Resources */,
-				D9F75BFD21FCF1EE00B6D12C /* GoogleService-Info.plist in Resources */,
+				D960D55621FD2D2300DE74F2 /* LaunchScreen.storyboard in Resources */,
+				D960D55821FD2E9200DE74F2 /* GoogleService-Info.plist in Resources */,
 				F698E52621FCDF0700F9732E /* Assets.xcassets in Resources */,
 				F698E52121FCDF0500F9732E /* Main.storyboard in Resources */,
 			);
@@ -431,10 +554,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F698E51E21FCDF0500F9732E /* ViewController.swift in Sources */,
+				F698E51E21FCDF0500F9732E /* LogInController.swift in Sources */,
 				F698E51C21FCDF0500F9732E /* AppDelegate.swift in Sources */,
+				F6D2032521FD0A720014AAEC /* FeedController.swift in Sources */,
 				F698E52421FCDF0500F9732E /* OpenInvite.xcdatamodeld in Sources */,
 				D9BBF4A621FD073000AEFC89 /* firestoreHelper.swift in Sources */,
+				F6D2033621FD1F960014AAEC /* Event.swift in Sources */,
+				F6D2032721FD11F30014AAEC /* Constraints.swift in Sources */,
+				F6D2033421FD1F530014AAEC /* User.swift in Sources */,
+				F6D2032F21FD17770014AAEC /* FeedCell.swift in Sources */,
+				F6D2032321FD03670014AAEC /* Snapchat.swift in Sources */,
+				F6D2032921FD16890014AAEC /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +600,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		D960D55421FD2D2300DE74F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D960D55521FD2D2300DE74F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		F698E51F21FCDF0500F9732E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -612,6 +750,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 235DD2SAG3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/SnapSDK",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = OpenInvite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -631,6 +774,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 235DD2SAG3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/SnapSDK",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = OpenInvite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
