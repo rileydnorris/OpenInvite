@@ -13,6 +13,7 @@ class FeedCell: UITableViewCell {
     @IBAction func acceptAction(_ sender: Any) {
     }
     
+    @IBOutlet weak var userAvatar: UIImageView!
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var inviteTextLabel: UILabel!
     @IBOutlet weak var inviterNameLabel: UILabel!
@@ -20,11 +21,21 @@ class FeedCell: UITableViewCell {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     
-    func configure(event: Event) {
+    func configure(event: Event, user: User) {
         cardView.applySoftShadow()
         inviteTextLabel.text = event.description
-        inviterNameLabel.text = "Jack Black"
+        inviterNameLabel.text = user.displayName
         timeLabel.text = event.time.toString(dateFormat: "MM-dd h:mm a")
         locationLabel.text = event.location
+        
+        setProfileImage(user)
+        
+    }
+    
+    
+    func setProfileImage(_ user: User) {
+        let url = URL(string: user.imageURL)
+        if let data = try? Data(contentsOf: url!) { userAvatar.image = UIImage(data: data) }
     }
 }
+

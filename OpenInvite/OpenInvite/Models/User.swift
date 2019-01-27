@@ -14,4 +14,15 @@ class User {
     var friendIDs: [String] = []
     var imageURL: String = ""
     
+    init(){}
+    
+    init(_ data : [String : Any]) {
+        print(data)
+        id = data["id"] as? String ?? "N/A"
+        displayName = data["displayName"] as? String ?? "N/A"
+        friendIDs = data["friendIDs"] as? [String] ?? []
+        imageURL = data["imageURL"] as? String ?? "N/A"
+        
+    }
+    
 }
