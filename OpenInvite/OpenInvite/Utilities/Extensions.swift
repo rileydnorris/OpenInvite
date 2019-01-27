@@ -149,7 +149,7 @@ extension Date {
 
 // MARK: - UILabel
 
-extension UILabel{
+extension UILabel {
     var defaultFont: UIFont? {
         get { return self.font }
         set { self.font = UIFont(name: "Avenir-Next", size: 14) }
@@ -196,6 +196,17 @@ extension UITextField {
                 addDoneButtonOnKeyboard()
             }
         }
+    }
+}
+
+// MARK: - UIImage
+
+extension UIImageView {
+    
+    /// Loads an image from a URL into a UIImage
+    func loadFromURL(urlString: String) {
+        let url = URL(string: urlString)
+        if let data = try? Data(contentsOf: url!) { self.image = UIImage(data: data) }
     }
 }
 

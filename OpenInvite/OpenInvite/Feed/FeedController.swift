@@ -22,9 +22,10 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hidesBottomBarWhenPushed = true
         
         let eventsRef = db.collection("events")
-        let listener = eventsRef.addSnapshotListener(updateEvents)
+        let _ = eventsRef.addSnapshotListener(updateEvents)
         
         let event = Event()
         event.hostID = "123"

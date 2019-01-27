@@ -12,14 +12,20 @@ import SCSDKBitmojiKit
 class AddEventController: UIViewController, SCSDKBitmojiStickerPickerViewControllerDelegate {
     
     @IBAction func addEventAction(_ sender: Any) {
-        self.present(stickerPickerVC, animated: true, completion: {
-            
-        })
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func addBitmojiAction(_ sender: Any) {
+        ConstraintHelper.set(on: stickerPickerVC.view, to: self.view, type: .leading, constant: 10)
+        ConstraintHelper.set(on: stickerPickerVC.view, to: self.view, type: .trailing, constant: -10)
+        ConstraintHelper.set(on: stickerPickerVC.view, to: self.view, type: .bottom, constant: -50)
+        ConstraintHelper.set(on: stickerPickerVC.view, to: self.view, type: .top, constant: 50)
     }
     
     @IBOutlet weak var descriptionTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var timeTextField: UITextField!
+    @IBOutlet weak var bitmojiImageView: UIImageView!
     
     let stickerPickerVC = SCSDKBitmojiStickerPickerViewController()
     
@@ -32,16 +38,12 @@ class AddEventController: UIViewController, SCSDKBitmojiStickerPickerViewControl
         
         self.view.addSubview(stickerPickerVC.view)
         stickerPickerVC.didMove(toParent: self)
-        
-//        ConstraintHelper.set(on: loginButton, to: self.view, type: .leading, constant: 25)
-//        ConstraintHelper.set(on: loginButton, to: self.view, type: .trailing, constant: -25)
-//        ConstraintHelper.set(on: loginButton, to: self.view, type: .centerX, constant: 0)
-//        ConstraintHelper.set(on: loginButton, to: self.view, type: .bottom, constant: -50)
-//        ConstraintHelper.set(on: loginButton, to: nil, type: .height, constant: 70)
     }
     
     func bitmojiStickerPickerViewController(_ stickerPickerViewController: SCSDKBitmojiStickerPickerViewController, didSelectBitmojiWithURL bitmojiURL: String, image: UIImage?) {
-        // do something
+        stickerPickerVC.view.removeFromSuperview()
+        bitmojiImageView.image = image
+        print(bitmojiURL)
     }
     
     // Optional delegate method for listening to search field
