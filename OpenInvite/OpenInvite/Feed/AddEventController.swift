@@ -12,6 +12,11 @@ import Material
 
 class AddEventController: UIViewController, SCSDKBitmojiStickerPickerViewControllerDelegate {
     
+    @IBAction func exitButton(_ sender: Any) {
+    
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     @IBAction func addEventAction(_ sender: Any) {
         if !descriptionTextField.text!.isEmpty && !timeTextField.text!.isEmpty && !locationTextField.text!.isEmpty && bitmojiChosen {
             impactFeedback.impactOccurred()

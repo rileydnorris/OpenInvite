@@ -10,9 +10,12 @@
 		0FC7056CDB8E3F33629AA9AE /* Pods_OpenInviteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D17EA434A93E6A2FC9873A /* Pods_OpenInviteTests.framework */; };
 		CEC6543AF874BFF9701AC773 /* Pods_OpenInvite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8361AFE9AE09C218A998347 /* Pods_OpenInvite.framework */; };
 		D960D55621FD2D2300DE74F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D960D55421FD2D2300DE74F2 /* LaunchScreen.storyboard */; };
-		D960D55821FD2E9200DE74F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D960D55721FD2E9200DE74F2 /* GoogleService-Info.plist */; };
 		D9BBF4A621FD073000AEFC89 /* firestoreHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BBF4A521FD073000AEFC89 /* firestoreHelper.swift */; };
 		EC3A00D6735218B3B101514B /* Pods_OpenInviteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A157B64C1BA4DFF4B0F5720 /* Pods_OpenInviteUITests.framework */; };
+		F63AAD3C21FDEF6700C39767 /* SCSDKBitmojiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F321FCFAC30014AAEC /* SCSDKBitmojiKit.framework */; };
+		F63AAD3D21FDEF6700C39767 /* SCSDKBitmojiKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F321FCFAC30014AAEC /* SCSDKBitmojiKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F63AAD3E21FDEF6C00C39767 /* SCSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F521FCFAC30014AAEC /* SCSDKLoginKit.framework */; };
+		F63AAD3F21FDEF6C00C39767 /* SCSDKLoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F521FCFAC30014AAEC /* SCSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F698E51C21FCDF0500F9732E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F698E51B21FCDF0500F9732E /* AppDelegate.swift */; };
 		F698E51E21FCDF0500F9732E /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F698E51D21FCDF0500F9732E /* LogInController.swift */; };
 		F698E52121FCDF0500F9732E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F698E51F21FCDF0500F9732E /* Main.storyboard */; };
@@ -25,19 +28,15 @@
 		F69D938421FDDFEE00710B7F /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69D938021FDDFDA00710B7F /* SDWebImage.framework */; };
 		F69D938521FDDFEE00710B7F /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F69D938021FDDFDA00710B7F /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F69D939521FDE7A500710B7F /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69D939421FDE7A500710B7F /* Material.framework */; };
-		F69D939621FDE7AB00710B7F /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69D939421FDE7A500710B7F /* Material.framework */; };
 		F69D939721FDE7AB00710B7F /* Material.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F69D939421FDE7A500710B7F /* Material.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F6AD0E6D21FE0583002CE6AE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D960D55721FD2E9200DE74F2 /* GoogleService-Info.plist */; };
+		F6AD0E6E21FE097F002CE6AE /* SCSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F221FCFAC30014AAEC /* SCSDKCoreKit.framework */; };
+		F6AD0E6F21FE097F002CE6AE /* SCSDKCoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F221FCFAC30014AAEC /* SCSDKCoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6D2030F21FCFAD80014AAEC /* Pods_OpenInvite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8361AFE9AE09C218A998347 /* Pods_OpenInvite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6D2031021FCFAD80014AAEC /* Pods_OpenInviteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D17EA434A93E6A2FC9873A /* Pods_OpenInviteTests.framework */; };
 		F6D2031121FCFAD80014AAEC /* Pods_OpenInviteTests.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41D17EA434A93E6A2FC9873A /* Pods_OpenInviteTests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6D2031221FCFAD80014AAEC /* Pods_OpenInviteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A157B64C1BA4DFF4B0F5720 /* Pods_OpenInviteUITests.framework */; };
 		F6D2031321FCFAD80014AAEC /* Pods_OpenInviteUITests.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A157B64C1BA4DFF4B0F5720 /* Pods_OpenInviteUITests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F6D2031721FCFB5D0014AAEC /* SCSDKBitmojiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F321FCFAC30014AAEC /* SCSDKBitmojiKit.framework */; };
-		F6D2031821FCFB5D0014AAEC /* SCSDKBitmojiKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F321FCFAC30014AAEC /* SCSDKBitmojiKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F6D2031921FCFB5D0014AAEC /* SCSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F221FCFAC30014AAEC /* SCSDKCoreKit.framework */; };
-		F6D2031A21FCFB5D0014AAEC /* SCSDKCoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F221FCFAC30014AAEC /* SCSDKCoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F6D2031D21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F521FCFAC30014AAEC /* SCSDKLoginKit.framework */; };
-		F6D2031E21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F521FCFAC30014AAEC /* SCSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6D2032321FD03670014AAEC /* Snapchat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2032221FD03670014AAEC /* Snapchat.swift */; };
 		F6D2032521FD0A720014AAEC /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2032421FD0A720014AAEC /* FeedController.swift */; };
 		F6D2032721FD11F30014AAEC /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2032621FD11F30014AAEC /* Constraints.swift */; };
@@ -78,12 +77,12 @@
 				F69D938521FDDFEE00710B7F /* SDWebImage.framework in Embed Frameworks */,
 				F6D2031321FCFAD80014AAEC /* Pods_OpenInviteUITests.framework in Embed Frameworks */,
 				F6D2030F21FCFAD80014AAEC /* Pods_OpenInvite.framework in Embed Frameworks */,
+				F63AAD3D21FDEF6700C39767 /* SCSDKBitmojiKit.framework in Embed Frameworks */,
 				F6D2031121FCFAD80014AAEC /* Pods_OpenInviteTests.framework in Embed Frameworks */,
-				F6D2031821FCFB5D0014AAEC /* SCSDKBitmojiKit.framework in Embed Frameworks */,
-				F6D2031A21FCFB5D0014AAEC /* SCSDKCoreKit.framework in Embed Frameworks */,
-				F6D2031E21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Embed Frameworks */,
+				F63AAD3F21FDEF6C00C39767 /* SCSDKLoginKit.framework in Embed Frameworks */,
 				F69D938321FDDFE500710B7F /* GoogleUtilities.framework in Embed Frameworks */,
 				F69D939721FDE7AB00710B7F /* Material.framework in Embed Frameworks */,
+				F6AD0E6F21FE097F002CE6AE /* SCSDKCoreKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +136,7 @@
 		F6D2033921FD58A10014AAEC /* AddEventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventController.swift; sourceTree = "<group>"; };
 		F6D2036521FD86AF0014AAEC /* DateClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateClass.swift; sourceTree = "<group>"; };
 		F6D2036821FDA7930014AAEC /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		F6E648A621FDEDCC00111357 /* libFirebaseFirestore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFirebaseFirestore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,16 +144,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F63AAD3E21FDEF6C00C39767 /* SCSDKLoginKit.framework in Frameworks */,
 				F69D938421FDDFEE00710B7F /* SDWebImage.framework in Frameworks */,
 				F69D938221FDDFE500710B7F /* GoogleUtilities.framework in Frameworks */,
-				F6D2031721FCFB5D0014AAEC /* SCSDKBitmojiKit.framework in Frameworks */,
 				F6D2031221FCFAD80014AAEC /* Pods_OpenInviteUITests.framework in Frameworks */,
+				F63AAD3C21FDEF6700C39767 /* SCSDKBitmojiKit.framework in Frameworks */,
 				F6D2031021FCFAD80014AAEC /* Pods_OpenInviteTests.framework in Frameworks */,
-				F69D939621FDE7AB00710B7F /* Material.framework in Frameworks */,
-				F6D2031D21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Frameworks */,
 				CEC6543AF874BFF9701AC773 /* Pods_OpenInvite.framework in Frameworks */,
-				F6D2031921FCFB5D0014AAEC /* SCSDKCoreKit.framework in Frameworks */,
 				F69D939521FDE7A500710B7F /* Material.framework in Frameworks */,
+				F6AD0E6E21FE097F002CE6AE /* SCSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +191,7 @@
 		4ED79E38B814AC86F0310DBF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F6E648A621FDEDCC00111357 /* libFirebaseFirestore.a */,
 				F69D939421FDE7A500710B7F /* Material.framework */,
 				F69D938821FDE0AF00710B7F /* FirebaseFirestore.framework */,
 				F69D938621FDE0A000710B7F /* FirebaseCore.framework */,
@@ -463,7 +463,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D960D55621FD2D2300DE74F2 /* LaunchScreen.storyboard in Resources */,
-				D960D55821FD2E9200DE74F2 /* GoogleService-Info.plist in Resources */,
+				F6AD0E6D21FE0583002CE6AE /* GoogleService-Info.plist in Resources */,
 				F698E52621FCDF0700F9732E /* Assets.xcassets in Resources */,
 				F698E52121FCDF0500F9732E /* Main.storyboard in Resources */,
 			);

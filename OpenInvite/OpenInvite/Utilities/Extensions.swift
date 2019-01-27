@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import MapKit
+import SDWebImage
 
 // MARK: - UIView
 
@@ -218,7 +219,12 @@ extension MKAnnotationView {
     /// Loads an image from a URL into a UIImage
     func loadFromURL(urlString: String) {
         let url = URL(string: urlString)
-        if let data = try? Data(contentsOf: url!) { self.image = UIImage(data: data) }
+        SDWebImageManager.shared().imageDownloader?.downloadImage(with: url, options: SDWebImageDownloaderOptions(), progress: nil, completed: { (image, error, cacheType, url) in
+            if image != nil {
+                self.image = image
+                self.image = self.image?.resize(toWidth: 75.0)
+            }
+        })
     }
 }
 
@@ -242,6 +248,25 @@ extension UIViewController {
             self.present(alertController, animated: true, completion: nil)
             notificationFeedback.notificationOccurred(.error)
         }
+    }
+}
+
+// MARK: - UIImage
+
+extension UIImage {
+    
+    /// Scales an image based off a given width
+    func resizeImage(newWidth: CGFloat) -> UIImage {
+        
+        let scale = newWidth / self.size.width
+        let newHeight = self.size.height * scale
+        UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeight))
+        self.draw(in: CGRect(x: 0, y: 0, width: newWidth, height: newHeight))
+        
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return newImage ?? UIImage()
     }
 }
 

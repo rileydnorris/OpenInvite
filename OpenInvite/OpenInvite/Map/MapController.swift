@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import Firebase
+import SDWebImage
 
 class MapController: UIViewController, MKMapViewDelegate {
     
@@ -112,7 +113,6 @@ class MapController: UIViewController, MKMapViewDelegate {
                                         }
                                         
                                         annotationView.loadFromURL(urlString: imageURL)
-                                        annotationView.image = self!.resizeImage(image: annotationView.image ?? UIImage(), newWidth: 75.0)
                                     }
                                 }
                             }
@@ -122,18 +122,5 @@ class MapController: UIViewController, MKMapViewDelegate {
             }
         }
         return annotationView
-    }
-    
-    func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage {
-        
-        let scale = newWidth / image.size.width
-        let newHeight = image.size.height * scale
-        UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeight))
-        image.draw(in: CGRect(x: 0, y: 0, width: newWidth, height: newHeight))
-        
-        let newImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-        return newImage ?? UIImage()
     }
 }

@@ -38,8 +38,8 @@ class LogInController: UIViewController {
         ConstraintHelper.set(on: loginButton, to: nil, type: .height, constant: 50)
         
         ConstraintHelper.set(on: bitmojiView, to: self.view, type: .centerX, constant: 0)
-        ConstraintHelper.set(on: bitmojiView, to: nil, type: .width, constant: 75)
-        ConstraintHelper.set(on: bitmojiView, to: nil, type: .height, constant: 75)
+        ConstraintHelper.set(on: bitmojiView, to: nil, type: .width, constant: 85)
+        ConstraintHelper.set(on: bitmojiView, to: nil, type: .height, constant: 85)
         ConstraintHelper.set(on: bitmojiView, to: self.view, type: .top, constant: 95)
         
     }

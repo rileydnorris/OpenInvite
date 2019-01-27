@@ -37,8 +37,7 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func setProfileImage() {
         let url = URL(string: user.imageURL)
-        print(user.imageURL)
-        if let data = try? Data(contentsOf: url!) { profileButton.setImage(UIImage(data: data), for: UIControl.State.normal) }
+        profileButton.sd_setImage(with: url, for: UIControl.State.normal, completed: nil)
     }
     
     func updateEvents(snapshot : QuerySnapshot?, error : Error?) {
