@@ -147,3 +147,55 @@ extension Date {
     }
 }
 
+// MARK: - UILabel
+
+extension UILabel{
+    var defaultFont: UIFont? {
+        get { return self.font }
+        set { self.font = UIFont(name: "Avenir-Next", size: 14) }
+    }
+}
+
+// MARK: - UITextField
+
+extension UITextField {
+    
+    /// Adds done button to the keyboard
+    func addDoneButtonOnKeyboard() {
+        let doneToolbar: UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 50))
+        
+        let done: UIBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(self.doneButtonAction))
+        done.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Avenir Next", size: 17)!], for: UIControl.State.normal)
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        
+        var items: [UIBarButtonItem] = []
+        
+        items.append(flexSpace)
+        items.append(done)
+        
+        doneToolbar.items = items
+        doneToolbar.sizeToFit()
+        
+        doneToolbar.barTintColor = UIColor.white
+        doneToolbar.tintColor = UIColor.purple
+        self.inputAccessoryView = doneToolbar
+    }
+    
+    /// Obj-C function to use in the `addDoneButtonOnKeyboard` function
+    @objc func doneButtonAction() {
+        self.resignFirstResponder()
+    }
+    
+    /// Creates a storyboard option for the done button
+    @IBInspectable var doneAccessory: Bool {
+        get {
+            return self.doneAccessory
+        }
+        set (hasDone) {
+            if hasDone {
+                addDoneButtonOnKeyboard()
+            }
+        }
+    }
+}
+

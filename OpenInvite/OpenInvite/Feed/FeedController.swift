@@ -57,8 +57,8 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         events.removeAll()
         for doc in documents {
-            var data = doc.data()
-            var event = Event(data)
+            let data = doc.data()
+            let event = Event(data)
             events.append(event)
         }
         
