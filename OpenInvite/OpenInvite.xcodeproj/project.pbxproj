@@ -24,6 +24,9 @@
 		F69D938321FDDFE500710B7F /* GoogleUtilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F69D937E21FDDFC800710B7F /* GoogleUtilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F69D938421FDDFEE00710B7F /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69D938021FDDFDA00710B7F /* SDWebImage.framework */; };
 		F69D938521FDDFEE00710B7F /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F69D938021FDDFDA00710B7F /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F69D939521FDE7A500710B7F /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69D939421FDE7A500710B7F /* Material.framework */; };
+		F69D939621FDE7AB00710B7F /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69D939421FDE7A500710B7F /* Material.framework */; };
+		F69D939721FDE7AB00710B7F /* Material.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F69D939421FDE7A500710B7F /* Material.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6D2030F21FCFAD80014AAEC /* Pods_OpenInvite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8361AFE9AE09C218A998347 /* Pods_OpenInvite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6D2031021FCFAD80014AAEC /* Pods_OpenInviteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D17EA434A93E6A2FC9873A /* Pods_OpenInviteTests.framework */; };
 		F6D2031121FCFAD80014AAEC /* Pods_OpenInviteTests.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41D17EA434A93E6A2FC9873A /* Pods_OpenInviteTests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -80,6 +83,7 @@
 				F6D2031A21FCFB5D0014AAEC /* SCSDKCoreKit.framework in Embed Frameworks */,
 				F6D2031E21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Embed Frameworks */,
 				F69D938321FDDFE500710B7F /* GoogleUtilities.framework in Embed Frameworks */,
+				F69D939721FDE7AB00710B7F /* Material.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,6 +121,7 @@
 		F69D938021FDDFDA00710B7F /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
 		F69D938621FDE0A000710B7F /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
 		F69D938821FDE0AF00710B7F /* FirebaseFirestore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseFirestore.framework; sourceTree = "<group>"; };
+		F69D939421FDE7A500710B7F /* Material.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Material.framework; sourceTree = "<group>"; };
 		F6D202F221FCFAC30014AAEC /* SCSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKCoreKit.framework; sourceTree = "<group>"; };
 		F6D202F321FCFAC30014AAEC /* SCSDKBitmojiKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKBitmojiKit.framework; sourceTree = "<group>"; };
 		F6D202F421FCFAC30014AAEC /* SCSDKCreativeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKCreativeKit.framework; sourceTree = "<group>"; };
@@ -144,9 +149,11 @@
 				F6D2031721FCFB5D0014AAEC /* SCSDKBitmojiKit.framework in Frameworks */,
 				F6D2031221FCFAD80014AAEC /* Pods_OpenInviteUITests.framework in Frameworks */,
 				F6D2031021FCFAD80014AAEC /* Pods_OpenInviteTests.framework in Frameworks */,
+				F69D939621FDE7AB00710B7F /* Material.framework in Frameworks */,
 				F6D2031D21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Frameworks */,
 				CEC6543AF874BFF9701AC773 /* Pods_OpenInvite.framework in Frameworks */,
 				F6D2031921FCFB5D0014AAEC /* SCSDKCoreKit.framework in Frameworks */,
+				F69D939521FDE7A500710B7F /* Material.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +192,7 @@
 		4ED79E38B814AC86F0310DBF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F69D939421FDE7A500710B7F /* Material.framework */,
 				F69D938821FDE0AF00710B7F /* FirebaseFirestore.framework */,
 				F69D938621FDE0A000710B7F /* FirebaseCore.framework */,
 				F69D938021FDDFDA00710B7F /* SDWebImage.framework */,

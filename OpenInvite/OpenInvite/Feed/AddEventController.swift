@@ -8,6 +8,7 @@
 
 import UIKit
 import SCSDKBitmojiKit
+import Material
 
 class AddEventController: UIViewController, SCSDKBitmojiStickerPickerViewControllerDelegate {
     
@@ -37,9 +38,9 @@ class AddEventController: UIViewController, SCSDKBitmojiStickerPickerViewControl
     
     let event = Event()
     
-    @IBOutlet weak var descriptionTextField: UITextField!
-    @IBOutlet weak var locationTextField: UITextField!
-    @IBOutlet weak var timeTextField: UITextField!
+    @IBOutlet weak var descriptionTextField: TextField!
+    @IBOutlet weak var locationTextField: TextField!
+    @IBOutlet weak var timeTextField: TextField!
     @IBOutlet weak var bitmojiImageView: UIImageView!
     
     var eventTime: Date = Date()
@@ -52,6 +53,15 @@ class AddEventController: UIViewController, SCSDKBitmojiStickerPickerViewControl
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarController?.tabBar.isHidden = true
+        
+        descriptionTextField.dividerActiveColor = UIColor(red: 185/255, green: 107/255, blue: 245/255, alpha: 1)
+        descriptionTextField.placeholderActiveColor = UIColor(red: 185/255, green: 107/255, blue: 245/255, alpha: 1)
+        
+        locationTextField.dividerActiveColor = UIColor(red: 185/255, green: 107/255, blue: 245/255, alpha: 1)
+        locationTextField.placeholderActiveColor = UIColor(red: 185/255, green: 107/255, blue: 245/255, alpha: 1)
+        
+        timeTextField.dividerActiveColor = UIColor(red: 185/255, green: 107/255, blue: 245/255, alpha: 1)
+        timeTextField.placeholderActiveColor = UIColor(red: 185/255, green: 107/255, blue: 245/255, alpha: 1)
         
         stickerPickerVC.delegate = self
         
