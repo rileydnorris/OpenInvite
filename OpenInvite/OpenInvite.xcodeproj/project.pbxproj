@@ -33,7 +33,6 @@
 		F6D2031C21FCFB5D0014AAEC /* SCSDKCreativeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F421FCFAC30014AAEC /* SCSDKCreativeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6D2031D21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F521FCFAC30014AAEC /* SCSDKLoginKit.framework */; };
 		F6D2031E21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F521FCFAC30014AAEC /* SCSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F6D2032121FCFF410014AAEC /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D2032021FCFF410014AAEC /* GoogleUtilities.framework */; };
 		F6D2032321FD03670014AAEC /* Snapchat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2032221FD03670014AAEC /* Snapchat.swift */; };
 		F6D2032521FD0A720014AAEC /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2032421FD0A720014AAEC /* FeedController.swift */; };
 		F6D2032721FD11F30014AAEC /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2032621FD11F30014AAEC /* Constraints.swift */; };
@@ -42,6 +41,7 @@
 		F6D2033421FD1F530014AAEC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2033321FD1F530014AAEC /* User.swift */; };
 		F6D2033621FD1F960014AAEC /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2033521FD1F960014AAEC /* Event.swift */; };
 		F6D2033821FD322C0014AAEC /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2033721FD322C0014AAEC /* Helpers.swift */; };
+		F6D2033A21FD58A10014AAEC /* AddEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2033921FD58A10014AAEC /* AddEventController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,7 +101,6 @@
 		F698E52021FCDF0500F9732E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F698E52321FCDF0500F9732E /* OpenInvite.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpenInvite.xcdatamodel; sourceTree = "<group>"; };
 		F698E52521FCDF0700F9732E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F698E52821FCDF0700F9732E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F698E52A21FCDF0700F9732E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F698E52F21FCDF0700F9732E /* OpenInviteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenInviteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F698E53321FCDF0700F9732E /* OpenInviteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenInviteTests.swift; sourceTree = "<group>"; };
@@ -113,7 +112,6 @@
 		F6D202F321FCFAC30014AAEC /* SCSDKBitmojiKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKBitmojiKit.framework; sourceTree = "<group>"; };
 		F6D202F421FCFAC30014AAEC /* SCSDKCreativeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKCreativeKit.framework; sourceTree = "<group>"; };
 		F6D202F521FCFAC30014AAEC /* SCSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKLoginKit.framework; sourceTree = "<group>"; };
-		F6D2032021FCFF410014AAEC /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D2032221FD03670014AAEC /* Snapchat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapchat.swift; sourceTree = "<group>"; };
 		F6D2032421FD0A720014AAEC /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
 		F6D2032621FD11F30014AAEC /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
@@ -122,6 +120,7 @@
 		F6D2033321FD1F530014AAEC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F6D2033521FD1F960014AAEC /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		F6D2033721FD322C0014AAEC /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		F6D2033921FD58A10014AAEC /* AddEventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +128,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6D2032121FCFF410014AAEC /* GoogleUtilities.framework in Frameworks */,
 				F6D2031721FCFB5D0014AAEC /* SCSDKBitmojiKit.framework in Frameworks */,
 				F6D2031B21FCFB5D0014AAEC /* SCSDKCreativeKit.framework in Frameworks */,
 				F6D2031221FCFAD80014AAEC /* Pods_OpenInviteUITests.framework in Frameworks */,
@@ -176,7 +174,6 @@
 			isa = PBXGroup;
 			children = (
 				D9DC77AA21FCFDC500D0D693 /* Firebase */,
-				F6D2032021FCFF410014AAEC /* GoogleUtilities.framework */,
 				F6D202F321FCFAC30014AAEC /* SCSDKBitmojiKit.framework */,
 				F6D202F221FCFAC30014AAEC /* SCSDKCoreKit.framework */,
 				F6D202F421FCFAC30014AAEC /* SCSDKCreativeKit.framework */,
@@ -249,7 +246,6 @@
 				F698E51B21FCDF0500F9732E /* AppDelegate.swift */,
 				F6D2033721FD322C0014AAEC /* Helpers.swift */,
 				F698E52521FCDF0700F9732E /* Assets.xcassets */,
-				F698E52721FCDF0700F9732E /* LaunchScreen.storyboard */,
 				D9BBF4A521FD073000AEFC89 /* firestoreHelper.swift */,
 				F6D2032821FD16890014AAEC /* Extensions.swift */,
 				F6D2032621FD11F30014AAEC /* Constraints.swift */,
@@ -272,6 +268,7 @@
 			children = (
 				F6D2032D21FD175D0014AAEC /* Cells */,
 				F6D2032421FD0A720014AAEC /* FeedController.swift */,
+				F6D2033921FD58A10014AAEC /* AddEventController.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -469,8 +466,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-OpenInvite/Pods-OpenInvite-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
-				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
+				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
 				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
 				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
@@ -478,12 +475,8 @@
 				"${PODS_ROOT}/SnapSDK/SCSDKCoreKit.framework",
 				"${PODS_ROOT}/SnapSDK/SCSDKCreativeKit.framework",
 				"${PODS_ROOT}/SnapSDK/SCSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -491,8 +484,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
@@ -500,12 +493,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCSDKCreativeKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -569,6 +558,7 @@
 				F6D2032F21FD17770014AAEC /* FeedCell.swift in Sources */,
 				F6D2032321FD03670014AAEC /* Snapchat.swift in Sources */,
 				F6D2032921FD16890014AAEC /* Extensions.swift in Sources */,
+				F6D2033A21FD58A10014AAEC /* AddEventController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,14 +608,6 @@
 				F698E52021FCDF0500F9732E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F698E52721FCDF0700F9732E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F698E52821FCDF0700F9732E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

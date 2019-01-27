@@ -27,6 +27,8 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let eventsRef = db.collection("events")
         let listener = eventsRef.addSnapshotListener(updateEvents)
         
+
+        
         
         
         setProfileImage()
@@ -40,6 +42,7 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let url = URL(string: user.imageURL)
         print(user.imageURL)
         if let data = try? Data(contentsOf: url!) { profileButton.setImage(UIImage(data: data), for: UIControl.State.normal) }
+
         
     }
     

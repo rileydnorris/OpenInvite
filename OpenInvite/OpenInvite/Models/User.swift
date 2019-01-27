@@ -14,6 +14,7 @@ class User {
     var friendIDs: [String] = []
     var imageURL: String = ""
     
+    
     init(){}
     
     init(_ data : [String : Any]) {
@@ -23,6 +24,19 @@ class User {
         friendIDs = data["friendIDs"] as? [String] ?? []
         imageURL = data["imageURL"] as? String ?? "N/A"
         
+    }
+    
+    
+    /// Saves the object in firebase
+    func save() {
+        let convertedObject: [String : Any] = [
+            "id" : id,
+            "displayName" : displayName,
+            "friendIDs" : friendIDs,
+            "imageURL" : imageURL
+        ]
+        
+        setDocument("users", id, convertedObject)
     }
     
 }

@@ -37,8 +37,8 @@ func setDocument(_ collectionName : String, _ id : String, _ data : [String : An
 
 
 /// Retrieves a document after being given an ID
-func getDocumentByID(_ collectionName : String, _ userID : String, completion: @escaping (DocumentSnapshot?, Error?) -> Void) {
-    let docRef: DocumentReference = db.collection("users").document(userID)
+func getDocumentByID(_ collectionName : String, _ docID : String, completion: @escaping (DocumentSnapshot?, Error?) -> Void) {
+    let docRef: DocumentReference = db.collection("users").document(docID)
     docRef.getDocument( completion: completion )
 }
 
