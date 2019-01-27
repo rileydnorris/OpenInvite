@@ -21,12 +21,14 @@ class Event {
     
     init(_ data : [String : Any]) {
         print(data)
+        id = data["id"] as! String
         hostID = data["hostID"] as! String
         description = data["description"] as! String
         location = data["location"] as! String
         let fireTime = data["time"] as! Timestamp
         time = Date(timeIntervalSince1970: TimeInterval(fireTime.seconds))
         imageURL = data["imageURL"] as! String
+        attendingIDs = data["attendingIDs"] as! [String]
     }
     
     init() {

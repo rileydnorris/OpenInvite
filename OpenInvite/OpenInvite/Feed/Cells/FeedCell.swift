@@ -11,12 +11,11 @@ import UIKit
 class FeedCell: UITableViewCell {
     
     @IBAction func acceptAction(_ sender: Any) {
-        acceptButton.setTitle("See you there!", for: .normal)
-        acceptButton.backgroundColor = UIColor(red: 003/255, green: 165/255, blue: 136/255, alpha: 1)
+        self.acceptButton.setTitle("See you there!", for: .normal)
+        self.acceptButton.backgroundColor = UIColor(red: 003/255, green: 165/255, blue: 136/255, alpha: 1)
         
-//        self.myEvent.attendingIDs = [user.id]
-//        print(self.myEvent.id)
-//        self.myEvent.save()
+        self.myEvent.attendingIDs = [user.id]
+        self.myEvent.save()
     }
     
     @IBOutlet weak var eventImage: UIImageView!
@@ -30,15 +29,22 @@ class FeedCell: UITableViewCell {
     
     var myEvent: Event = Event()
     
-    func configure(event: Event, user: User) {
-        self.myEvent.id = event.id
+    func configure(event: Event, eventUser: User) {
+        self.myEvent = event
+        print(self.myEvent.attendingIDs)
+        print(user.id)
+        if (self.myEvent.attendingIDs.contains(user.id)) {
+            self.acceptButton.setTitle("See you there!", for: .normal)
+            self.acceptButton.backgroundColor = UIColor(red: 003/255, green: 165/255, blue: 136/255, alpha: 1)
+        }
+        
         cardView.applySoftShadow()
         inviteTextLabel.text = event.description
-        inviterNameLabel.text = user.displayName
+        inviterNameLabel.text = eventUser.displayName
         timeLabel.text = event.time.toString(dateFormat: "MM-dd h:mm a")
         locationLabel.text = event.location
         
-        setProfileImage(user)
+        setProfileImage(eventUser)
         setEventImage(event)
         
     }
