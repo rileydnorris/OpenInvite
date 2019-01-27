@@ -11,6 +11,7 @@ import SCSDKBitmojiKit
 import Firebase
 
 class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     @IBOutlet weak var tableView: UITableView!
     
     @IBAction func profileAction(_ sender: Any) {
@@ -30,7 +31,6 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     override func viewWillAppear(_ animated: Bool) {
-//        self.hidesBottomBarWhenPushed = true
         self.navigationController?.isNavigationBarHidden = true
         self.tabBarController?.tabBar.isHidden = false
     }
@@ -39,8 +39,6 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let url = URL(string: user.imageURL)
         print(user.imageURL)
         if let data = try? Data(contentsOf: url!) { profileButton.setImage(UIImage(data: data), for: UIControl.State.normal) }
-        
-        
     }
     
     func updateEvents(snapshot : QuerySnapshot?, error : Error?) {

@@ -12,6 +12,7 @@ import Firebase
 
 class MapController: UIViewController, MKMapViewDelegate {
     
+    @IBOutlet weak var profileButton: UIButton!
     @IBOutlet weak var mapView: MKMapView!
     
     let regionRadius: CLLocationDistance = 1000
@@ -21,11 +22,18 @@ class MapController: UIViewController, MKMapViewDelegate {
         super.viewDidLoad()
         mapView.delegate = self
         
+        setProfileImage()
+        
         let eventsRef = db.collection("events")
         let _ = eventsRef.addSnapshotListener(updateEvents)
         
         let initialLocation = CLLocation(latitude: 30.627977, longitude: -96.3344068)
         centerMapOnLocation(location: initialLocation)
+    }
+    
+    func setProfileImage() {
+        let url = URL(string: user.imageURL)
+        if let data = try? Data(contentsOf: url!) { profileButton.setImage(UIImage(data: data), for: UIControl.State.normal) }
     }
     
     func updateEvents(snapshot : QuerySnapshot?, error : Error?) {
