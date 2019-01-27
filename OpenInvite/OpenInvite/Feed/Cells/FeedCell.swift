@@ -11,6 +11,12 @@ import UIKit
 class FeedCell: UITableViewCell {
     
     @IBAction func acceptAction(_ sender: Any) {
+        acceptButton.setTitle("See you there!", for: .normal)
+        acceptButton.backgroundColor = UIColor(red: 003/255, green: 165/255, blue: 136/255, alpha: 1)
+        
+//        self.myEvent.attendingIDs = [user.id]
+//        print(self.myEvent.id)
+//        self.myEvent.save()
     }
     
     @IBOutlet weak var eventImage: UIImageView!
@@ -22,7 +28,10 @@ class FeedCell: UITableViewCell {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     
+    var myEvent: Event = Event()
+    
     func configure(event: Event, user: User) {
+        self.myEvent.id = event.id
         cardView.applySoftShadow()
         inviteTextLabel.text = event.description
         inviterNameLabel.text = user.displayName

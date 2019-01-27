@@ -59,7 +59,7 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
         }
         
-        self.tableView.reloadData()
+//        self.tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
