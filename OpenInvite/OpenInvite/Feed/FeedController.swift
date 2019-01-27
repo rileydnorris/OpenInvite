@@ -18,32 +18,28 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var profileButton: UIButton!
     
-    var events: [Event] = []
     var cardInfo: [(User, Event)] = []
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hidesBottomBarWhenPushed = true
         
         let eventsRef = db.collection("events")
         let _ = eventsRef.addSnapshotListener(updateEvents)
-        
-
-        
-        
         
         setProfileImage()
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        self.hidesBottomBarWhenPushed = true
         self.navigationController?.isNavigationBarHidden = true
+        self.tabBarController?.tabBar.isHidden = false
     }
     
     func setProfileImage() {
         let url = URL(string: user.imageURL)
         print(user.imageURL)
         if let data = try? Data(contentsOf: url!) { profileButton.setImage(UIImage(data: data), for: UIControl.State.normal) }
-
+        
         
     }
     
@@ -64,8 +60,6 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 self.tableView.reloadData()
             }
         }
-        
-        self.tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

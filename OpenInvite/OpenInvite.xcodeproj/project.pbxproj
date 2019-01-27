@@ -41,6 +41,7 @@
 		F6D2033821FD322C0014AAEC /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2033721FD322C0014AAEC /* Helpers.swift */; };
 		F6D2033A21FD58A10014AAEC /* AddEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2033921FD58A10014AAEC /* AddEventController.swift */; };
 		F6D2036621FD86AF0014AAEC /* DateClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2036521FD86AF0014AAEC /* DateClass.swift */; };
+		F6D2036921FDA7930014AAEC /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2036821FDA7930014AAEC /* MapController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,7 @@
 		F6D2033721FD322C0014AAEC /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		F6D2033921FD58A10014AAEC /* AddEventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventController.swift; sourceTree = "<group>"; };
 		F6D2036521FD86AF0014AAEC /* DateClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateClass.swift; sourceTree = "<group>"; };
+		F6D2036821FDA7930014AAEC /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 				F6D2032B21FD17340014AAEC /* Storyboards */,
 				F6D2032C21FD174C0014AAEC /* LogIn */,
 				F6D2032A21FD17210014AAEC /* Feed */,
+				F6D2036721FDA76E0014AAEC /* Map */,
 				F6D2033221FD1F390014AAEC /* Models */,
 			);
 			path = OpenInvite;
@@ -311,6 +314,14 @@
 				F6D2036521FD86AF0014AAEC /* DateClass.swift */,
 			);
 			path = "Custom Classes";
+			sourceTree = "<group>";
+		};
+		F6D2036721FDA76E0014AAEC /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				F6D2036821FDA7930014AAEC /* MapController.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -641,6 +652,7 @@
 				D9BBF4A621FD073000AEFC89 /* firestoreHelper.swift in Sources */,
 				F6D2033621FD1F960014AAEC /* Event.swift in Sources */,
 				F6D2032721FD11F30014AAEC /* Constraints.swift in Sources */,
+				F6D2036921FDA7930014AAEC /* MapController.swift in Sources */,
 				F6D2033421FD1F530014AAEC /* User.swift in Sources */,
 				F6D2032F21FD17770014AAEC /* FeedCell.swift in Sources */,
 				F6D2036621FD86AF0014AAEC /* DateClass.swift in Sources */,

@@ -18,7 +18,6 @@ class User {
     init(){}
     
     init(_ data : [String : Any]) {
-        print(data)
         id = data["id"] as? String ?? "N/A"
         displayName = data["displayName"] as? String ?? "N/A"
         friendIDs = data["friendIDs"] as? [String] ?? []
@@ -35,7 +34,7 @@ class User {
             "friendIDs" : friendIDs,
             "imageURL" : imageURL
         ]
-        
+        print(id)
         setDocument("users", id, convertedObject)
     }
     

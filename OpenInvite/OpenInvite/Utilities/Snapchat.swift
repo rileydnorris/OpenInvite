@@ -44,6 +44,9 @@ class Snapchat {
                 print("External ID: \(externalId)\n\n")
                 user.id = externalId.replacingOccurrences(of: "/", with: "|")
             }
+            
+            
+            
             user.save()
             completion(true)
             

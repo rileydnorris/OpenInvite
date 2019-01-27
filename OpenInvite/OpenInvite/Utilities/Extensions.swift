@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import MapKit
 
 // MARK: - UIView
 
@@ -202,6 +203,17 @@ extension UITextField {
 // MARK: - UIImage
 
 extension UIImageView {
+    
+    /// Loads an image from a URL into a UIImage
+    func loadFromURL(urlString: String) {
+        let url = URL(string: urlString)
+        if let data = try? Data(contentsOf: url!) { self.image = UIImage(data: data) }
+    }
+}
+
+// MARK: - AnnotationView
+
+extension MKAnnotationView {
     
     /// Loads an image from a URL into a UIImage
     func loadFromURL(urlString: String) {

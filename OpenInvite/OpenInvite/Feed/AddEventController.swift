@@ -12,11 +12,12 @@ import SCSDKBitmojiKit
 class AddEventController: UIViewController, SCSDKBitmojiStickerPickerViewControllerDelegate {
     
     @IBAction func addEventAction(_ sender: Any) {
-        let event = Event()
         event.id = UUID().uuidString
+        event.id = event.id.replacingOccurrences(of: "/", with: "|")
         event.description = descriptionTextField.text!
         event.time = eventTime
         event.location = locationTextField.text!
+        event.hostID = user.id
         event.save()
         
         self.navigationController?.popViewController(animated: true)
@@ -28,6 +29,8 @@ class AddEventController: UIViewController, SCSDKBitmojiStickerPickerViewControl
         ConstraintHelper.set(on: stickerPickerVC.view, to: self.view, type: .bottom, constant: -50)
         ConstraintHelper.set(on: stickerPickerVC.view, to: self.view, type: .top, constant: 50)
     }
+    
+    let event = Event()
     
     @IBOutlet weak var descriptionTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
@@ -41,6 +44,7 @@ class AddEventController: UIViewController, SCSDKBitmojiStickerPickerViewControl
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.tabBarController?.tabBar.isHidden = true
         
         stickerPickerVC.delegate = self
         
@@ -54,6 +58,7 @@ class AddEventController: UIViewController, SCSDKBitmojiStickerPickerViewControl
     
     func bitmojiStickerPickerViewController(_ stickerPickerViewController: SCSDKBitmojiStickerPickerViewController, didSelectBitmojiWithURL bitmojiURL: String, image: UIImage?) {
         stickerPickerVC.view.removeFromSuperview()
+        event.imageURL = bitmojiURL
         bitmojiImageView.image = image
     }
     
