@@ -18,7 +18,6 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var profileButton: UIButton!
     
-    var events: [Event] = []
     var cardInfo: [(User, Event)] = []
 
     override func viewDidLoad() {
@@ -26,10 +25,6 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let eventsRef = db.collection("events")
         let listener = eventsRef.addSnapshotListener(updateEvents)
-        
-
-        
-        
         
         setProfileImage()
     }

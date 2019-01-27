@@ -29,8 +29,6 @@
 		F6D2031821FCFB5D0014AAEC /* SCSDKBitmojiKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F321FCFAC30014AAEC /* SCSDKBitmojiKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6D2031921FCFB5D0014AAEC /* SCSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F221FCFAC30014AAEC /* SCSDKCoreKit.framework */; };
 		F6D2031A21FCFB5D0014AAEC /* SCSDKCoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F221FCFAC30014AAEC /* SCSDKCoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F6D2031B21FCFB5D0014AAEC /* SCSDKCreativeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F421FCFAC30014AAEC /* SCSDKCreativeKit.framework */; };
-		F6D2031C21FCFB5D0014AAEC /* SCSDKCreativeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F421FCFAC30014AAEC /* SCSDKCreativeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6D2031D21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F521FCFAC30014AAEC /* SCSDKLoginKit.framework */; };
 		F6D2031E21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F521FCFAC30014AAEC /* SCSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6D2032321FD03670014AAEC /* Snapchat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2032221FD03670014AAEC /* Snapchat.swift */; };
@@ -74,7 +72,6 @@
 				F6D2031821FCFB5D0014AAEC /* SCSDKBitmojiKit.framework in Embed Frameworks */,
 				F6D2031A21FCFB5D0014AAEC /* SCSDKCoreKit.framework in Embed Frameworks */,
 				F6D2031E21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Embed Frameworks */,
-				F6D2031C21FCFB5D0014AAEC /* SCSDKCreativeKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,7 +126,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6D2031721FCFB5D0014AAEC /* SCSDKBitmojiKit.framework in Frameworks */,
-				F6D2031B21FCFB5D0014AAEC /* SCSDKCreativeKit.framework in Frameworks */,
 				F6D2031221FCFAD80014AAEC /* Pods_OpenInviteUITests.framework in Frameworks */,
 				F6D2031021FCFAD80014AAEC /* Pods_OpenInviteTests.framework in Frameworks */,
 				F6D2031D21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Frameworks */,
@@ -735,7 +731,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 764FG2R9VZ;
+				DEVELOPMENT_TEAM = 235DD2SAG3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/SnapSDK",
@@ -759,7 +755,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 764FG2R9VZ;
+				DEVELOPMENT_TEAM = 235DD2SAG3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/SnapSDK",
