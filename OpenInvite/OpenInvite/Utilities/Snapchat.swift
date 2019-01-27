@@ -16,12 +16,12 @@ class Snapchat {
             if let error = error {
                 print(error.localizedDescription)
             } else {
-                Snapchat.retrieveData()
+//                Snapchat.retrieveData()
             }
         }
     }
     
-    static func retrieveData() {
+    static func retrieveData(completion: @escaping (_ success: Bool) -> Void) {
         let graphQLQuery = "{me{displayName, bitmoji{avatar}, externalId}}"
         let variables = ["page": "bitmoji"]
         
@@ -30,18 +30,23 @@ class Snapchat {
             
             if let displayName = me["displayName"] as? String {
                 print("\n\nDisplay Name: \(displayName)\n")
+                user.displayName = displayName
             }
             
             if let bitmoji = me["bitmoji"] as? [String: Any], let bitmojiAvatarUrl = bitmoji["avatar"] as? String {
                 print("Bitmoji URL: \(bitmojiAvatarUrl)\n")
+                user.imageURL = bitmojiAvatarUrl
             }
             
             if let externalId = me["externalId"] as? String {
                 print("External ID: \(externalId)\n\n")
+                user.id = externalId
             }
+            completion(true)
             
         }, failure: { (error: Error?, isUserLoggedOut: Bool) in
             print("ERROR RETRIEVING DATA FROM USER")
+            completion(false)
         })
     }
 }

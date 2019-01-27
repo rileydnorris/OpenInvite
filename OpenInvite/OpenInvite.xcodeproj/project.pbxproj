@@ -39,6 +39,7 @@
 		F6D2032F21FD17770014AAEC /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2032E21FD17770014AAEC /* FeedCell.swift */; };
 		F6D2033421FD1F530014AAEC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2033321FD1F530014AAEC /* User.swift */; };
 		F6D2033621FD1F960014AAEC /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2033521FD1F960014AAEC /* Event.swift */; };
+		F6D2033821FD322C0014AAEC /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2033721FD322C0014AAEC /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,7 @@
 		F6D2032E21FD17770014AAEC /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		F6D2033321FD1F530014AAEC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F6D2033521FD1F960014AAEC /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		F6D2033721FD322C0014AAEC /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +241,7 @@
 			children = (
 				F6D2031F21FCFB950014AAEC /* Etc */,
 				F698E51B21FCDF0500F9732E /* AppDelegate.swift */,
+				F6D2033721FD322C0014AAEC /* Helpers.swift */,
 				F698E52521FCDF0700F9732E /* Assets.xcassets */,
 				F6D2032821FD16890014AAEC /* Extensions.swift */,
 				F6D2032621FD11F30014AAEC /* Constraints.swift */,
@@ -605,6 +608,7 @@
 				F698E51C21FCDF0500F9732E /* AppDelegate.swift in Sources */,
 				F6D2032521FD0A720014AAEC /* FeedController.swift in Sources */,
 				F698E52421FCDF0500F9732E /* OpenInvite.xcdatamodeld in Sources */,
+				F6D2033821FD322C0014AAEC /* Helpers.swift in Sources */,
 				F6D2033621FD1F960014AAEC /* Event.swift in Sources */,
 				F6D2032721FD11F30014AAEC /* Constraints.swift in Sources */,
 				F6D2033421FD1F530014AAEC /* User.swift in Sources */,

@@ -19,7 +19,11 @@ class LogInController: UIViewController {
         
         let loginButton: SCSDKLoginButton! = SCSDKLoginButton() { (success : Bool, error : Error?) in
             DispatchQueue.main.sync {
-                self.performSegue(withIdentifier: "toFeed", sender: nil)
+                Snapchat.retrieveData(completion: { _ in 
+                    DispatchQueue.main.sync {
+                        self.performSegue(withIdentifier: "toFeed", sender: nil)
+                    }
+                })
             }
         }
         

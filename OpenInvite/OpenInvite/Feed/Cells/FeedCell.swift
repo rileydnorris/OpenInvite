@@ -17,11 +17,14 @@ class FeedCell: UITableViewCell {
     @IBOutlet weak var inviteTextLabel: UILabel!
     @IBOutlet weak var inviterNameLabel: UILabel!
     @IBOutlet weak var acceptButton: UIButton!
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
     
-    func configure(description: String, hostName: String) {
+    func configure(event: Event) {
         cardView.applySoftShadow()
-        inviteTextLabel.text = description
-        inviterNameLabel.text = hostName
+        inviteTextLabel.text = event.description
+        inviterNameLabel.text = "Jack Black"
+        timeLabel.text = event.time.toString(dateFormat: "MM-dd h:mm a")
+        locationLabel.text = event.location
     }
-    
 }
