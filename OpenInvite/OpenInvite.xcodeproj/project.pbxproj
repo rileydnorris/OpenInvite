@@ -29,8 +29,6 @@
 		F6D2031821FCFB5D0014AAEC /* SCSDKBitmojiKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F321FCFAC30014AAEC /* SCSDKBitmojiKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6D2031921FCFB5D0014AAEC /* SCSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F221FCFAC30014AAEC /* SCSDKCoreKit.framework */; };
 		F6D2031A21FCFB5D0014AAEC /* SCSDKCoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F221FCFAC30014AAEC /* SCSDKCoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F6D2031B21FCFB5D0014AAEC /* SCSDKCreativeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F421FCFAC30014AAEC /* SCSDKCreativeKit.framework */; };
-		F6D2031C21FCFB5D0014AAEC /* SCSDKCreativeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F421FCFAC30014AAEC /* SCSDKCreativeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6D2031D21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F521FCFAC30014AAEC /* SCSDKLoginKit.framework */; };
 		F6D2031E21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F521FCFAC30014AAEC /* SCSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6D2032321FD03670014AAEC /* Snapchat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2032221FD03670014AAEC /* Snapchat.swift */; };
@@ -42,6 +40,7 @@
 		F6D2033621FD1F960014AAEC /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2033521FD1F960014AAEC /* Event.swift */; };
 		F6D2033821FD322C0014AAEC /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2033721FD322C0014AAEC /* Helpers.swift */; };
 		F6D2033A21FD58A10014AAEC /* AddEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2033921FD58A10014AAEC /* AddEventController.swift */; };
+		F6D2036621FD86AF0014AAEC /* DateClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2036521FD86AF0014AAEC /* DateClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +73,6 @@
 				F6D2031821FCFB5D0014AAEC /* SCSDKBitmojiKit.framework in Embed Frameworks */,
 				F6D2031A21FCFB5D0014AAEC /* SCSDKCoreKit.framework in Embed Frameworks */,
 				F6D2031E21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Embed Frameworks */,
-				F6D2031C21FCFB5D0014AAEC /* SCSDKCreativeKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,6 +119,7 @@
 		F6D2033521FD1F960014AAEC /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		F6D2033721FD322C0014AAEC /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		F6D2033921FD58A10014AAEC /* AddEventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventController.swift; sourceTree = "<group>"; };
+		F6D2036521FD86AF0014AAEC /* DateClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +128,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6D2031721FCFB5D0014AAEC /* SCSDKBitmojiKit.framework in Frameworks */,
-				F6D2031B21FCFB5D0014AAEC /* SCSDKCreativeKit.framework in Frameworks */,
 				F6D2031221FCFAD80014AAEC /* Pods_OpenInviteUITests.framework in Frameworks */,
 				F6D2031021FCFAD80014AAEC /* Pods_OpenInviteTests.framework in Frameworks */,
 				F6D2031D21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Frameworks */,
@@ -300,10 +298,19 @@
 		F6D2033221FD1F390014AAEC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F6D2036421FD86860014AAEC /* Custom Classes */,
 				F6D2033321FD1F530014AAEC /* User.swift */,
 				F6D2033521FD1F960014AAEC /* Event.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F6D2036421FD86860014AAEC /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F6D2036521FD86AF0014AAEC /* DateClass.swift */,
+			);
+			path = "Custom Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +326,7 @@
 				F698E51621FCDF0500F9732E /* Resources */,
 				1DA28D080C03D233615BA57D /* [CP] Embed Pods Frameworks */,
 				F6D202FE21FCFAC40014AAEC /* Embed Frameworks */,
+				19E9B374C04A026A198BFAD1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -337,6 +345,8 @@
 				F698E52B21FCDF0700F9732E /* Sources */,
 				F698E52C21FCDF0700F9732E /* Frameworks */,
 				F698E52D21FCDF0700F9732E /* Resources */,
+				007C7A3A66ADDE9CB478E076 /* [CP] Embed Pods Frameworks */,
+				B312D342FD99F567F71469E5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -356,6 +366,8 @@
 				F698E53621FCDF0700F9732E /* Sources */,
 				F698E53721FCDF0700F9732E /* Frameworks */,
 				F698E53821FCDF0700F9732E /* Resources */,
+				7E1F2B81FE02DD123971A6BC /* [CP] Embed Pods Frameworks */,
+				45D44685788D6D701B155ACF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -439,6 +451,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		007C7A3A66ADDE9CB478E076 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInviteTests/Pods-OpenInviteTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		03A7BDD673B515FD123C81A2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -455,6 +482,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19E9B374C04A026A198BFAD1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInvite/Pods-OpenInvite-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		1DA28D080C03D233615BA57D /* [CP] Embed Pods Frameworks */ = {
@@ -503,6 +545,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInvite/Pods-OpenInvite-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		45D44685788D6D701B155ACF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInviteUITests/Pods-OpenInviteUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		707FB453E108D8474C5236F2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -519,6 +576,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E1F2B81FE02DD123971A6BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInviteUITests/Pods-OpenInviteUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B312D342FD99F567F71469E5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInviteTests/Pods-OpenInviteTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E93A199C772ABC144E5D1E30 /* [CP] Check Pods Manifest.lock */ = {
@@ -556,6 +643,7 @@
 				F6D2032721FD11F30014AAEC /* Constraints.swift in Sources */,
 				F6D2033421FD1F530014AAEC /* User.swift in Sources */,
 				F6D2032F21FD17770014AAEC /* FeedCell.swift in Sources */,
+				F6D2036621FD86AF0014AAEC /* DateClass.swift in Sources */,
 				F6D2032321FD03670014AAEC /* Snapchat.swift in Sources */,
 				F6D2032921FD16890014AAEC /* Extensions.swift in Sources */,
 				F6D2033A21FD58A10014AAEC /* AddEventController.swift in Sources */,
