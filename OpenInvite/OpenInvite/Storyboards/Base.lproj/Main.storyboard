@@ -225,9 +225,11 @@
                         <viewLayoutGuide key="safeArea" id="kDb-M1-7o6"/>
                     </view>
                     <navigationItem key="navigationItem" id="p7V-xm-SUZ"/>
-                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>                    
+                    <!-- <tabBarItem key="tabBarItem" title="Feed" selectedImage="feedIcon" id="IfP-t7-Syv"/> -->
                     <connections>
                         <outlet property="profileButton" destination="AZU-kU-OWB" id="UCo-cF-CgE"/>
+                        <outlet property="tableView" destination="G6j-9r-2IA" id="TB9-tC-bI2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KaM-JS-xPd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -240,6 +242,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="kmv-XO-g7D" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Sx9-Yy-WFu">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

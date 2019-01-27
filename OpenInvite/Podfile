@@ -9,6 +9,7 @@ target 'OpenInvite' do
 
 pod 'MaterialComponents/TextFields'
 pod 'Firebase'
+pod 'Firebase/Firestore'
 pod 'PINCache'
 pod 'SnapSDK'
 

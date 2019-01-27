@@ -8,8 +8,10 @@
 
 import UIKit
 import SCSDKBitmojiKit
+import Firebase
 
 class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var tableView: UITableView!
     
     @IBAction func profileAction(_ sender: Any) {
     }
@@ -20,6 +22,9 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let eventsRef = db.collection("events")
+        let listener = eventsRef.addSnapshotListener(updateEvents)
         
         let event = Event()
         event.hostID = "123"
@@ -42,6 +47,22 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func setProfileImage() {
         let url = URL(string: user.imageURL)
         if let data = try? Data(contentsOf: url!) { profileButton.setImage(UIImage(data: data), for: UIControl.State.normal) }
+    }
+    
+    func updateEvents(snapshot : QuerySnapshot?, error : Error?) {
+        guard let documents = snapshot?.documents else {
+            print("Error fetching documents: \(error!)")
+            return
+        }
+        
+        events.removeAll()
+        for doc in documents {
+            var data = doc.data()
+            var event = Event(data)
+            events.append(event)
+        }
+        
+        self.tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

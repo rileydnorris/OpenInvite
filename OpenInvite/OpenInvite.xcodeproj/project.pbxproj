@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		0FC7056CDB8E3F33629AA9AE /* Pods_OpenInviteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D17EA434A93E6A2FC9873A /* Pods_OpenInviteTests.framework */; };
 		CEC6543AF874BFF9701AC773 /* Pods_OpenInvite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8361AFE9AE09C218A998347 /* Pods_OpenInvite.framework */; };
+		D960D55621FD2D2300DE74F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D960D55421FD2D2300DE74F2 /* LaunchScreen.storyboard */; };
+		D960D55821FD2E9200DE74F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D960D55721FD2E9200DE74F2 /* GoogleService-Info.plist */; };
+		D9BBF4A621FD073000AEFC89 /* firestoreHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BBF4A521FD073000AEFC89 /* firestoreHelper.swift */; };
 		EC3A00D6735218B3B101514B /* Pods_OpenInviteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A157B64C1BA4DFF4B0F5720 /* Pods_OpenInviteUITests.framework */; };
 		F698E51C21FCDF0500F9732E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F698E51B21FCDF0500F9732E /* AppDelegate.swift */; };
 		F698E51E21FCDF0500F9732E /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F698E51D21FCDF0500F9732E /* LogInController.swift */; };
 		F698E52121FCDF0500F9732E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F698E51F21FCDF0500F9732E /* Main.storyboard */; };
 		F698E52421FCDF0500F9732E /* OpenInvite.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F698E52221FCDF0500F9732E /* OpenInvite.xcdatamodeld */; };
 		F698E52621FCDF0700F9732E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F698E52521FCDF0700F9732E /* Assets.xcassets */; };
-		F698E52921FCDF0700F9732E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F698E52721FCDF0700F9732E /* LaunchScreen.storyboard */; };
 		F698E53421FCDF0700F9732E /* OpenInviteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F698E53321FCDF0700F9732E /* OpenInviteTests.swift */; };
 		F698E53F21FCDF0700F9732E /* OpenInviteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F698E53E21FCDF0700F9732E /* OpenInviteUITests.swift */; };
 		F6D2030F21FCFAD80014AAEC /* Pods_OpenInvite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8361AFE9AE09C218A998347 /* Pods_OpenInvite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -88,7 +90,10 @@
 		8733DF1EDC81AD67384050FB /* Pods-OpenInviteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenInviteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenInviteUITests/Pods-OpenInviteUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A8361AFE9AE09C218A998347 /* Pods_OpenInvite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenInvite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B095F07A28A826511E29490E /* Pods-OpenInviteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenInviteUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenInviteUITests/Pods-OpenInviteUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		D9F75BFC21FCF1EE00B6D12C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D960D55521FD2D2300DE74F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D960D55721FD2E9200DE74F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D9BBF4A521FD073000AEFC89 /* firestoreHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firestoreHelper.swift; sourceTree = "<group>"; };
+		D9DC77AA21FCFDC500D0D693 /* Firebase */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Firebase; path = Pods/Firebase; sourceTree = "<group>"; };
 		EB9EEBF3F281BE9E35DF7913 /* Pods-OpenInvite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenInvite.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenInvite/Pods-OpenInvite.debug.xcconfig"; sourceTree = "<group>"; };
 		F698E51821FCDF0500F9732E /* OpenInvite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenInvite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F698E51B21FCDF0500F9732E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +175,7 @@
 		4ED79E38B814AC86F0310DBF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D9DC77AA21FCFDC500D0D693 /* Firebase */,
 				F6D2032021FCFF410014AAEC /* GoogleUtilities.framework */,
 				F6D202F321FCFAC30014AAEC /* SCSDKBitmojiKit.framework */,
 				F6D202F221FCFAC30014AAEC /* SCSDKCoreKit.framework */,
@@ -207,7 +213,7 @@
 		F698E51A21FCDF0500F9732E /* OpenInvite */ = {
 			isa = PBXGroup;
 			children = (
-				D9F75BFC21FCF1EE00B6D12C /* GoogleService-Info.plist */,
+				D960D55721FD2E9200DE74F2 /* GoogleService-Info.plist */,
 				F698E52A21FCDF0700F9732E /* Info.plist */,
 				F698E54C21FCDF1D00F9732E /* Utilities */,
 				F6D2032B21FD17340014AAEC /* Storyboards */,
@@ -243,6 +249,8 @@
 				F698E51B21FCDF0500F9732E /* AppDelegate.swift */,
 				F6D2033721FD322C0014AAEC /* Helpers.swift */,
 				F698E52521FCDF0700F9732E /* Assets.xcassets */,
+				F698E52721FCDF0700F9732E /* LaunchScreen.storyboard */,
+				D9BBF4A521FD073000AEFC89 /* firestoreHelper.swift */,
 				F6D2032821FD16890014AAEC /* Extensions.swift */,
 				F6D2032621FD11F30014AAEC /* Constraints.swift */,
 				F6D2032221FD03670014AAEC /* Snapchat.swift */,
@@ -253,7 +261,7 @@
 		F6D2031F21FCFB950014AAEC /* Etc */ = {
 			isa = PBXGroup;
 			children = (
-				F698E52721FCDF0700F9732E /* LaunchScreen.storyboard */,
+				D960D55421FD2D2300DE74F2 /* LaunchScreen.storyboard */,
 				F698E52221FCDF0500F9732E /* OpenInvite.xcdatamodeld */,
 			);
 			path = Etc;
@@ -313,8 +321,8 @@
 				F698E51521FCDF0500F9732E /* Frameworks */,
 				F698E51621FCDF0500F9732E /* Resources */,
 				1DA28D080C03D233615BA57D /* [CP] Embed Pods Frameworks */,
-				F42C455D94E8B16BFDDE35B1 /* [CP] Copy Pods Resources */,
 				F6D202FE21FCFAC40014AAEC /* Embed Frameworks */,
+				57BB8717EC4EB819212BB1F4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -333,8 +341,8 @@
 				F698E52B21FCDF0700F9732E /* Sources */,
 				F698E52C21FCDF0700F9732E /* Frameworks */,
 				F698E52D21FCDF0700F9732E /* Resources */,
-				F652A998D9F29C3BFE217DD8 /* [CP] Embed Pods Frameworks */,
-				A9CF38E410166F68695C5747 /* [CP] Copy Pods Resources */,
+				CA60F39D22BF4EDFCAC8FDEB /* [CP] Embed Pods Frameworks */,
+				227292E5E3AEACD0E07E7670 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -354,8 +362,8 @@
 				F698E53621FCDF0700F9732E /* Sources */,
 				F698E53721FCDF0700F9732E /* Frameworks */,
 				F698E53821FCDF0700F9732E /* Resources */,
-				E0D5504CD11EB265A2ECCDCD /* [CP] Embed Pods Frameworks */,
-				38A9F609C87C9AF3A08199DB /* [CP] Copy Pods Resources */,
+				47AEC881AE27E5A0C532BC66 /* [CP] Embed Pods Frameworks */,
+				1C8883CE6C52EB25C4E65539 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -415,7 +423,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F698E52921FCDF0700F9732E /* LaunchScreen.storyboard in Resources */,
+				D960D55621FD2D2300DE74F2 /* LaunchScreen.storyboard in Resources */,
+				D960D55821FD2E9200DE74F2 /* GoogleService-Info.plist in Resources */,
 				F698E52621FCDF0700F9732E /* Assets.xcassets in Resources */,
 				F698E52121FCDF0500F9732E /* Main.storyboard in Resources */,
 			);
@@ -456,37 +465,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1DA28D080C03D233615BA57D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-OpenInvite/Pods-OpenInvite-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
-				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
-				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
-				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
-				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInvite/Pods-OpenInvite-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		38A9F609C87C9AF3A08199DB /* [CP] Copy Pods Resources */ = {
+		1C8883CE6C52EB25C4E65539 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -499,6 +478,97 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInviteUITests/Pods-OpenInviteUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DA28D080C03D233615BA57D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OpenInvite/Pods-OpenInvite-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInvite/Pods-OpenInvite-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		227292E5E3AEACD0E07E7670 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInviteTests/Pods-OpenInviteTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47AEC881AE27E5A0C532BC66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInviteUITests/Pods-OpenInviteUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57BB8717EC4EB819212BB1F4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInvite/Pods-OpenInvite-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		707FB453E108D8474C5236F2 /* [CP] Check Pods Manifest.lock */ = {
@@ -519,22 +589,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A9CF38E410166F68695C5747 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInviteTests/Pods-OpenInviteTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E0D5504CD11EB265A2ECCDCD /* [CP] Embed Pods Frameworks */ = {
+		CA60F39D22BF4EDFCAC8FDEB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -546,7 +601,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInviteUITests/Pods-OpenInviteUITests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInviteTests/Pods-OpenInviteTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E93A199C772ABC144E5D1E30 /* [CP] Check Pods Manifest.lock */ = {
@@ -567,36 +622,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F42C455D94E8B16BFDDE35B1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInvite/Pods-OpenInvite-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F652A998D9F29C3BFE217DD8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInviteTests/Pods-OpenInviteTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -609,6 +634,7 @@
 				F6D2032521FD0A720014AAEC /* FeedController.swift in Sources */,
 				F698E52421FCDF0500F9732E /* OpenInvite.xcdatamodeld in Sources */,
 				F6D2033821FD322C0014AAEC /* Helpers.swift in Sources */,
+				D9BBF4A621FD073000AEFC89 /* firestoreHelper.swift in Sources */,
 				F6D2033621FD1F960014AAEC /* Event.swift in Sources */,
 				F6D2032721FD11F30014AAEC /* Constraints.swift in Sources */,
 				F6D2033421FD1F530014AAEC /* User.swift in Sources */,
@@ -650,6 +676,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		D960D55421FD2D2300DE74F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D960D55521FD2D2300DE74F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		F698E51F21FCDF0500F9732E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -798,10 +832,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = OpenInvite/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "riley-norris.OpenInvite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -822,10 +853,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = OpenInvite/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "riley-norris.OpenInvite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -842,11 +870,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 764FG2R9VZ;
 				INFOPLIST_FILE = OpenInviteTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "riley-norris.OpenInviteTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -864,11 +888,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 764FG2R9VZ;
 				INFOPLIST_FILE = OpenInviteTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "riley-norris.OpenInviteTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -885,11 +905,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 764FG2R9VZ;
 				INFOPLIST_FILE = OpenInviteUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "riley-norris.OpenInviteUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -906,11 +922,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 764FG2R9VZ;
 				INFOPLIST_FILE = OpenInviteUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "riley-norris.OpenInviteUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

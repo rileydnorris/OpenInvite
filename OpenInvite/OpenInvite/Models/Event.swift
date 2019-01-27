@@ -15,4 +15,14 @@ class Event {
     var location: String = ""
     var time: Date = Date()
     var imageURL: String = ""
+    
+    init(_ data : [String : Any]) {
+        hostID = data["hostID"] as! String
+        description = data["description"] as! String
+        location = data["location"] as! String
+        time = data["time"] as! Date
+    }
+    
+    init() {
+    }
 }
