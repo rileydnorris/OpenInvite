@@ -66,7 +66,7 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "feedCell", for: indexPath) as! FeedCell
-        cell.configure(event: cardInfo[indexPath.row].1, user: cardInfo[indexPath.row].0)
+        cell.configure(event: cardInfo[indexPath.row].1, eventUser: cardInfo[indexPath.row].0)
         return cell
     }
 }

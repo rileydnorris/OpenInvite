@@ -9,8 +9,6 @@
 import Foundation
 import Firebase
 
-let db = Firestore.firestore()
-
 /// Writes to a specified document
 func setDocument(_ collectionName : String, _ id : String, _ data : [String : Any])  {
     print(id)

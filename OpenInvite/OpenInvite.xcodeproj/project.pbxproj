@@ -20,6 +20,10 @@
 		F698E52621FCDF0700F9732E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F698E52521FCDF0700F9732E /* Assets.xcassets */; };
 		F698E53421FCDF0700F9732E /* OpenInviteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F698E53321FCDF0700F9732E /* OpenInviteTests.swift */; };
 		F698E53F21FCDF0700F9732E /* OpenInviteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F698E53E21FCDF0700F9732E /* OpenInviteUITests.swift */; };
+		F69D938221FDDFE500710B7F /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69D937E21FDDFC800710B7F /* GoogleUtilities.framework */; };
+		F69D938321FDDFE500710B7F /* GoogleUtilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F69D937E21FDDFC800710B7F /* GoogleUtilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F69D938421FDDFEE00710B7F /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69D938021FDDFDA00710B7F /* SDWebImage.framework */; };
+		F69D938521FDDFEE00710B7F /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F69D938021FDDFDA00710B7F /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6D2030F21FCFAD80014AAEC /* Pods_OpenInvite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8361AFE9AE09C218A998347 /* Pods_OpenInvite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6D2031021FCFAD80014AAEC /* Pods_OpenInviteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D17EA434A93E6A2FC9873A /* Pods_OpenInviteTests.framework */; };
 		F6D2031121FCFAD80014AAEC /* Pods_OpenInviteTests.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41D17EA434A93E6A2FC9873A /* Pods_OpenInviteTests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -68,12 +72,14 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F69D938521FDDFEE00710B7F /* SDWebImage.framework in Embed Frameworks */,
 				F6D2031321FCFAD80014AAEC /* Pods_OpenInviteUITests.framework in Embed Frameworks */,
 				F6D2030F21FCFAD80014AAEC /* Pods_OpenInvite.framework in Embed Frameworks */,
 				F6D2031121FCFAD80014AAEC /* Pods_OpenInviteTests.framework in Embed Frameworks */,
 				F6D2031821FCFB5D0014AAEC /* SCSDKBitmojiKit.framework in Embed Frameworks */,
 				F6D2031A21FCFB5D0014AAEC /* SCSDKCoreKit.framework in Embed Frameworks */,
 				F6D2031E21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Embed Frameworks */,
+				F69D938321FDDFE500710B7F /* GoogleUtilities.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +113,10 @@
 		F698E53A21FCDF0700F9732E /* OpenInviteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenInviteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F698E53E21FCDF0700F9732E /* OpenInviteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenInviteUITests.swift; sourceTree = "<group>"; };
 		F698E54021FCDF0700F9732E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F69D937E21FDDFC800710B7F /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = "<group>"; };
+		F69D938021FDDFDA00710B7F /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
+		F69D938621FDE0A000710B7F /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
+		F69D938821FDE0AF00710B7F /* FirebaseFirestore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseFirestore.framework; sourceTree = "<group>"; };
 		F6D202F221FCFAC30014AAEC /* SCSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKCoreKit.framework; sourceTree = "<group>"; };
 		F6D202F321FCFAC30014AAEC /* SCSDKBitmojiKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKBitmojiKit.framework; sourceTree = "<group>"; };
 		F6D202F421FCFAC30014AAEC /* SCSDKCreativeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKCreativeKit.framework; sourceTree = "<group>"; };
@@ -129,6 +139,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F69D938421FDDFEE00710B7F /* SDWebImage.framework in Frameworks */,
+				F69D938221FDDFE500710B7F /* GoogleUtilities.framework in Frameworks */,
 				F6D2031721FCFB5D0014AAEC /* SCSDKBitmojiKit.framework in Frameworks */,
 				F6D2031221FCFAD80014AAEC /* Pods_OpenInviteUITests.framework in Frameworks */,
 				F6D2031021FCFAD80014AAEC /* Pods_OpenInviteTests.framework in Frameworks */,
@@ -173,6 +185,10 @@
 		4ED79E38B814AC86F0310DBF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F69D938821FDE0AF00710B7F /* FirebaseFirestore.framework */,
+				F69D938621FDE0A000710B7F /* FirebaseCore.framework */,
+				F69D938021FDDFDA00710B7F /* SDWebImage.framework */,
+				F69D937E21FDDFC800710B7F /* GoogleUtilities.framework */,
 				D9DC77AA21FCFDC500D0D693 /* Firebase */,
 				F6D202F321FCFAC30014AAEC /* SCSDKBitmojiKit.framework */,
 				F6D202F221FCFAC30014AAEC /* SCSDKCoreKit.framework */,
@@ -524,6 +540,7 @@
 				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
 				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${PODS_ROOT}/SnapSDK/SCSDKBitmojiKit.framework",
 				"${PODS_ROOT}/SnapSDK/SCSDKCoreKit.framework",
 				"${PODS_ROOT}/SnapSDK/SCSDKCreativeKit.framework",
@@ -542,6 +559,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCSDKBitmojiKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCSDKCreativeKit.framework",

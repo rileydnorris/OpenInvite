@@ -21,6 +21,7 @@ class LogInController: UIViewController {
             DispatchQueue.main.sync {
                 Snapchat.retrieveData(completion: { _ in 
                     DispatchQueue.main.sync {
+                        notificationFeedback.notificationOccurred(.success)
                         self.performSegue(withIdentifier: "toFeed", sender: nil)
                     }
                 })

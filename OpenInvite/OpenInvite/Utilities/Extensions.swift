@@ -222,3 +222,26 @@ extension MKAnnotationView {
     }
 }
 
+// MARK: - UIViewController
+
+extension UIViewController {
+    
+    /// Displays an alert and screen shake on the current view controller
+    func handle(error: String) {
+        DispatchQueue.main.async {
+            // vibrate and shake screen
+            if let view: UIView = self.viewIfLoaded {
+                view.transform = CGAffineTransform(translationX: 30, y: 0)
+                UIView.animate(withDuration: 0.45, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 1, options: .curveEaseInOut, animations: {
+                    view.transform = CGAffineTransform.identity
+                }, completion: nil)
+            }
+            let alertController: UIAlertController = UIAlertController(title: "Whoops!", message: error, preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+            }))
+            self.present(alertController, animated: true, completion: nil)
+            notificationFeedback.notificationOccurred(.error)
+        }
+    }
+}
+

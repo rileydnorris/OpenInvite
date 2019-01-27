@@ -7,10 +7,19 @@
 //
 
 import UIKit
+import SDWebImage
 
 class FeedCell: UITableViewCell {
     
     @IBAction func acceptAction(_ sender: Any) {
+        if !self.myEvent.attendingIDs.contains(user.id) {
+            self.acceptButton.setTitle("See you there!", for: .normal)
+            self.acceptButton.backgroundColor = UIColor(red: 003/255, green: 165/255, blue: 136/255, alpha: 1)
+            
+            self.myEvent.attendingIDs = [user.id]
+            self.myEvent.save()
+            impactFeedback.impactOccurred()
+        }
     }
     
     @IBOutlet weak var eventImage: UIImageView!
@@ -22,14 +31,26 @@ class FeedCell: UITableViewCell {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     
-    func configure(event: Event, user: User) {
+    var myEvent: Event = Event()
+    
+    func configure(event: Event, eventUser: User) {
+        self.myEvent = event
+
+        if self.myEvent.attendingIDs.contains(user.id) {
+            self.acceptButton.setTitle("See you there!", for: .normal)
+            self.acceptButton.backgroundColor = UIColor(red: 003/255, green: 165/255, blue: 136/255, alpha: 1)
+        } else {
+            self.acceptButton.setTitle("I'm in!", for: .normal)
+            self.acceptButton.backgroundColor = UIColor(red: 185/255, green: 107/255, blue: 245/255, alpha: 1)
+        }
+        
         cardView.applySoftShadow()
         inviteTextLabel.text = event.description
-        inviterNameLabel.text = user.displayName
+        inviterNameLabel.text = eventUser.displayName
         timeLabel.text = event.time.toString(dateFormat: "MM-dd h:mm a")
         locationLabel.text = event.location
         
-        setProfileImage(user)
+        setProfileImage(eventUser)
         setEventImage(event)
         
     }
@@ -45,9 +66,7 @@ class FeedCell: UITableViewCell {
             }
             
             let url = URL(string: imageURL)
-            if let data = try? Data(contentsOf: url!) {
-                self.userAvatar.image = UIImage(data: data)
-            }
+            self.userAvatar.sd_setImage(with: url, completed: nil)
         }
     }
     
@@ -61,8 +80,7 @@ class FeedCell: UITableViewCell {
             }
             
             let url = URL(string: imageURL)
-            
-            if let data = try? Data(contentsOf: url!) { self.eventImage.image = UIImage(data: data) }
+            self.eventImage.sd_setImage(with: url, completed: nil)
         }
     }
 }

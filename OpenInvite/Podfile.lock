@@ -102,6 +102,9 @@ PODS:
   - PINCache (2.3)
   - PINOperation (1.1.1)
   - Protobuf (3.6.1)
+  - SDWebImage (4.4.4):
+    - SDWebImage/Core (= 4.4.4)
+  - SDWebImage/Core (4.4.4)
   - SnapSDK (1.2.0):
     - SnapSDK/SCSDKBitmojiKit (= 1.2.0)
     - SnapSDK/SCSDKCreativeKit (= 1.2.0)
@@ -117,6 +120,7 @@ DEPENDENCIES:
   - Firebase/Firestore
   - Material
   - PINCache
+  - SDWebImage
   - SnapSDK
 
 SPEC CHECKSUMS:
@@ -138,8 +142,9 @@ SPEC CHECKSUMS:
   PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
   PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
+  SDWebImage: c00ec18ab25d10e5ffac109b0f78d1b4341c9691
   SnapSDK: ab99c79e619067da4ed60c98ea5a04a288b83dc0
 
-PODFILE CHECKSUM: d7d67778a3f12496088e2365d480ff5b6b2f7407
+PODFILE CHECKSUM: 5d19651c2b1673f9a288c5f34ac4a541581c7938
 
 COCOAPODS: 1.4.0

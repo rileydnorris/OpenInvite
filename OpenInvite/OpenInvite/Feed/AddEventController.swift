@@ -12,15 +12,20 @@ import SCSDKBitmojiKit
 class AddEventController: UIViewController, SCSDKBitmojiStickerPickerViewControllerDelegate {
     
     @IBAction func addEventAction(_ sender: Any) {
-        event.id = UUID().uuidString
-        event.id = event.id.replacingOccurrences(of: "/", with: "|")
-        event.description = descriptionTextField.text!
-        event.time = eventTime
-        event.location = locationTextField.text!
-        event.hostID = user.id
-        event.save()
-        
-        self.navigationController?.popViewController(animated: true)
+        if !descriptionTextField.text!.isEmpty && !timeTextField.text!.isEmpty && !locationTextField.text!.isEmpty && bitmojiChosen {
+            impactFeedback.impactOccurred()
+            event.id = UUID().uuidString
+            event.id = event.id.replacingOccurrences(of: "/", with: "|")
+            event.description = descriptionTextField.text!
+            event.time = eventTime
+            event.location = locationTextField.text!
+            event.hostID = user.id
+            event.save()
+            
+            self.navigationController?.popViewController(animated: true)
+        } else {
+            self.handle(error: "Please enter all fields and choose a Bitmoji!")
+        }
     }
     
     @IBAction func addBitmojiAction(_ sender: Any) {
@@ -39,6 +44,8 @@ class AddEventController: UIViewController, SCSDKBitmojiStickerPickerViewControl
     
     var eventTime: Date = Date()
     let datePicker: UIDatePicker = UIDatePicker()
+    
+    var bitmojiChosen: Bool = false
     
     let stickerPickerVC = SCSDKBitmojiStickerPickerViewController()
     
@@ -60,6 +67,7 @@ class AddEventController: UIViewController, SCSDKBitmojiStickerPickerViewControl
         stickerPickerVC.view.removeFromSuperview()
         event.imageURL = bitmojiURL
         bitmojiImageView.image = image
+        bitmojiChosen = true
     }
     
     // Optional delegate method for listening to search field
