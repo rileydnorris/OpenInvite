@@ -53,7 +53,7 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return
         }
         
-        events.removeAll()
+        cardInfo.removeAll()
         for doc in documents {
             let data = doc.data()
             let event = Event(data)
@@ -63,7 +63,6 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 self.cardInfo.append((user, event))
                 self.tableView.reloadData()
             }
-            events.append(event)
         }
         
         self.tableView.reloadData()

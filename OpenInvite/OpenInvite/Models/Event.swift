@@ -23,6 +23,7 @@ class Event {
         description = data["description"] as! String
         location = data["location"] as! String
 //        time = data["time"] as! Date
+        imageURL = data["imageURL"] as! String
     }
     
     init() {
