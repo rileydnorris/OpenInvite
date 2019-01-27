@@ -34,7 +34,14 @@ class FeedCell: UITableViewCell {
     
     
     func setProfileImage(_ user: User) {
-        let url = URL(string: user.imageURL)
+        var imageURL = ""
+        if (user.imageURL.isEmpty) {
+            imageURL = "https://i.kym-cdn.com/entries/icons/original/000/016/212/manning.png"
+        } else {
+            imageURL = user.imageURL
+        }
+        
+        let url = URL(string: imageURL)
         if let data = try? Data(contentsOf: url!) { userAvatar.image = UIImage(data: data) }
     }
 }
