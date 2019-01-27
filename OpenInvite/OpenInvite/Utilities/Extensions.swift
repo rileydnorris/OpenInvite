@@ -117,3 +117,33 @@ extension UIView {
     }
 }
 
+// MARK: - UIDate
+
+extension Date {
+    
+    /// Converts a date to a string based off a given format
+    func toString(dateFormat format: String ) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format
+        return dateFormatter.string(from: self)
+    }
+    
+    /// Converts a date object into a string
+    func toString() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeZone = TimeZone.current
+        return dateFormatter.string(from: self)
+    }
+    
+    /// Returns the time off a date object
+    func getTime() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .none
+        dateFormatter.timeStyle = .medium
+        dateFormatter.dateFormat = "h:mm a"
+        dateFormatter.timeZone = TimeZone.current
+        return dateFormatter.string(from: self)
+    }
+}
+

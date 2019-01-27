@@ -11,6 +11,7 @@ import Firebase
 
 let db = Firestore.firestore()
 
+/// Test function
 func firebaseTest() {
     
     // Add a new document with a generated ID
@@ -28,26 +29,20 @@ func firebaseTest() {
     }
 }
 
+/// Writes to a specified document
 func setDocument(_ collectionName : String, _ id : String, _ data : [String : Any])  {
     let docRef: DocumentReference = db.collection(collectionName).document(id)
     docRef.setData(data, merge : true)
 }
 
-func getDocumentByID(_ collectionName : String, _ docID : String, completion: @escaping (DocumentSnapshot?, Error?) -> Void) {
-    let docRef: DocumentReference = db.collection("users").document(docID)
+
+/// Retrieves a document after being given an ID
+func getDocumentByID(_ collectionName : String, _ userID : String, completion: @escaping (DocumentSnapshot?, Error?) -> Void) {
+    let docRef: DocumentReference = db.collection("users").document(userID)
     docRef.getDocument( completion: completion )
-//        { (document, error) in
-//        if let document = document, document.exists {
-//            let data = document.data() ?? nil
-//            completion(data!)
-////            print("Document data: \(data)")
-//        } else {
-//            print("Document does not exist")
-//        }
-//    }
 }
 
-
+/// Retrieves an entire collection
 func getCollectionDocuments(_ collectionName : String, completion: @escaping (QuerySnapshot?, Error?) -> Void) {
     let collectRef: CollectionReference = db.collection(collectionName)
     collectRef.getDocuments( completion: completion )

@@ -13,4 +13,5 @@ class User {
     var displayName: String = ""
     var friendIDs: [String] = []
     var imageURL: String = ""
+    
 }
