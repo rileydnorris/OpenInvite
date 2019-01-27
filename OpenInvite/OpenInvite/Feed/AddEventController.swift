@@ -44,7 +44,7 @@ class AddEventController: UIViewController, SCSDKBitmojiStickerPickerViewControl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.tabBarController?.tabBar.isHidden = true
+        self.tabBarController?.tabBar.isHidden = true
         
         stickerPickerVC.delegate = self
         

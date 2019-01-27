@@ -396,7 +396,7 @@
             </objects>
             <point key="canvasLocation" x="3460" y="26.53673163418291"/>
         </scene>
-        <!--Item-->
+        <!--Map-->
         <scene sceneID="aKq-Yy-bOj">
             <objects>
                 <viewController id="jpq-n2-Agp" customClass="MapController" customModule="OpenInvite" customModuleProvider="target" sceneMemberID="viewController">
@@ -417,7 +417,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EG0-dc-mcy"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="PyV-HQ-jgN"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="gpsIcon" id="PyV-HQ-jgN"/>
                     <connections>
                         <outlet property="mapView" destination="ing-UA-9Te" id="BZz-A4-dwX"/>
                     </connections>
@@ -436,6 +436,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.72549019609999998" green="0.41960784309999999" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="h67-Vk-y0g" kind="relationship" relationship="viewControllers" id="23E-C7-JWm"/>
@@ -450,7 +451,7 @@
         <scene sceneID="HUb-In-7d7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h67-Vk-y0g" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Feed" selectedImage="feedIcon" id="IfP-t7-Syv"/>
+                    <tabBarItem key="tabBarItem" title="Feed" image="feedIcon" selectedImage="feedIcon" id="IfP-t7-Syv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fal-ip-g52">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>

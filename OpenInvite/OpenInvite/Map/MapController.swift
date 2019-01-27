@@ -57,7 +57,6 @@ class MapController: UIViewController, MKMapViewDelegate {
     func setAnnotations() {
         for (_, event) in cardInfo {
             let location = event.location
-            print(location)
             let geocoder = CLGeocoder()
             geocoder.geocodeAddressString(location) { [weak self] placemarks, error in
                 if let placemark = placemarks?.first {
@@ -105,7 +104,7 @@ class MapController: UIViewController, MKMapViewDelegate {
                                         }
                                         
                                         annotationView.loadFromURL(urlString: imageURL)
-                                        annotationView.image = self!.resizeImage(image: annotationView.image ?? UIImage(), newWidth: 100.0)
+                                        annotationView.image = self!.resizeImage(image: annotationView.image ?? UIImage(), newWidth: 75.0)
                                     }
                                 }
                             }
