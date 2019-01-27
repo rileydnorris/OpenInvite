@@ -20,6 +20,13 @@
 		F698E52621FCDF0700F9732E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F698E52521FCDF0700F9732E /* Assets.xcassets */; };
 		F698E53421FCDF0700F9732E /* OpenInviteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F698E53321FCDF0700F9732E /* OpenInviteTests.swift */; };
 		F698E53F21FCDF0700F9732E /* OpenInviteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F698E53E21FCDF0700F9732E /* OpenInviteUITests.swift */; };
+		F69D938221FDDFE500710B7F /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69D937E21FDDFC800710B7F /* GoogleUtilities.framework */; };
+		F69D938321FDDFE500710B7F /* GoogleUtilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F69D937E21FDDFC800710B7F /* GoogleUtilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F69D938421FDDFEE00710B7F /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69D938021FDDFDA00710B7F /* SDWebImage.framework */; };
+		F69D938521FDDFEE00710B7F /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F69D938021FDDFDA00710B7F /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F69D939521FDE7A500710B7F /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69D939421FDE7A500710B7F /* Material.framework */; };
+		F69D939621FDE7AB00710B7F /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69D939421FDE7A500710B7F /* Material.framework */; };
+		F69D939721FDE7AB00710B7F /* Material.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F69D939421FDE7A500710B7F /* Material.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6D2030F21FCFAD80014AAEC /* Pods_OpenInvite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8361AFE9AE09C218A998347 /* Pods_OpenInvite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6D2031021FCFAD80014AAEC /* Pods_OpenInviteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D17EA434A93E6A2FC9873A /* Pods_OpenInviteTests.framework */; };
 		F6D2031121FCFAD80014AAEC /* Pods_OpenInviteTests.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41D17EA434A93E6A2FC9873A /* Pods_OpenInviteTests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -29,11 +36,8 @@
 		F6D2031821FCFB5D0014AAEC /* SCSDKBitmojiKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F321FCFAC30014AAEC /* SCSDKBitmojiKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6D2031921FCFB5D0014AAEC /* SCSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F221FCFAC30014AAEC /* SCSDKCoreKit.framework */; };
 		F6D2031A21FCFB5D0014AAEC /* SCSDKCoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F221FCFAC30014AAEC /* SCSDKCoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F6D2031B21FCFB5D0014AAEC /* SCSDKCreativeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F421FCFAC30014AAEC /* SCSDKCreativeKit.framework */; };
-		F6D2031C21FCFB5D0014AAEC /* SCSDKCreativeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F421FCFAC30014AAEC /* SCSDKCreativeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6D2031D21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F521FCFAC30014AAEC /* SCSDKLoginKit.framework */; };
 		F6D2031E21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6D202F521FCFAC30014AAEC /* SCSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F6D2032121FCFF410014AAEC /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D2032021FCFF410014AAEC /* GoogleUtilities.framework */; };
 		F6D2032321FD03670014AAEC /* Snapchat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2032221FD03670014AAEC /* Snapchat.swift */; };
 		F6D2032521FD0A720014AAEC /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2032421FD0A720014AAEC /* FeedController.swift */; };
 		F6D2032721FD11F30014AAEC /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2032621FD11F30014AAEC /* Constraints.swift */; };
@@ -42,6 +46,9 @@
 		F6D2033421FD1F530014AAEC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2033321FD1F530014AAEC /* User.swift */; };
 		F6D2033621FD1F960014AAEC /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2033521FD1F960014AAEC /* Event.swift */; };
 		F6D2033821FD322C0014AAEC /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2033721FD322C0014AAEC /* Helpers.swift */; };
+		F6D2033A21FD58A10014AAEC /* AddEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2033921FD58A10014AAEC /* AddEventController.swift */; };
+		F6D2036621FD86AF0014AAEC /* DateClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2036521FD86AF0014AAEC /* DateClass.swift */; };
+		F6D2036921FDA7930014AAEC /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2036821FDA7930014AAEC /* MapController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,13 +75,15 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F69D938521FDDFEE00710B7F /* SDWebImage.framework in Embed Frameworks */,
 				F6D2031321FCFAD80014AAEC /* Pods_OpenInviteUITests.framework in Embed Frameworks */,
 				F6D2030F21FCFAD80014AAEC /* Pods_OpenInvite.framework in Embed Frameworks */,
 				F6D2031121FCFAD80014AAEC /* Pods_OpenInviteTests.framework in Embed Frameworks */,
 				F6D2031821FCFB5D0014AAEC /* SCSDKBitmojiKit.framework in Embed Frameworks */,
 				F6D2031A21FCFB5D0014AAEC /* SCSDKCoreKit.framework in Embed Frameworks */,
 				F6D2031E21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Embed Frameworks */,
-				F6D2031C21FCFB5D0014AAEC /* SCSDKCreativeKit.framework in Embed Frameworks */,
+				F69D938321FDDFE500710B7F /* GoogleUtilities.framework in Embed Frameworks */,
+				F69D939721FDE7AB00710B7F /* Material.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,7 +110,6 @@
 		F698E52021FCDF0500F9732E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F698E52321FCDF0500F9732E /* OpenInvite.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpenInvite.xcdatamodel; sourceTree = "<group>"; };
 		F698E52521FCDF0700F9732E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F698E52821FCDF0700F9732E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F698E52A21FCDF0700F9732E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F698E52F21FCDF0700F9732E /* OpenInviteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenInviteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F698E53321FCDF0700F9732E /* OpenInviteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenInviteTests.swift; sourceTree = "<group>"; };
@@ -109,11 +117,15 @@
 		F698E53A21FCDF0700F9732E /* OpenInviteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenInviteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F698E53E21FCDF0700F9732E /* OpenInviteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenInviteUITests.swift; sourceTree = "<group>"; };
 		F698E54021FCDF0700F9732E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F69D937E21FDDFC800710B7F /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = "<group>"; };
+		F69D938021FDDFDA00710B7F /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
+		F69D938621FDE0A000710B7F /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
+		F69D938821FDE0AF00710B7F /* FirebaseFirestore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseFirestore.framework; sourceTree = "<group>"; };
+		F69D939421FDE7A500710B7F /* Material.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Material.framework; sourceTree = "<group>"; };
 		F6D202F221FCFAC30014AAEC /* SCSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKCoreKit.framework; sourceTree = "<group>"; };
 		F6D202F321FCFAC30014AAEC /* SCSDKBitmojiKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKBitmojiKit.framework; sourceTree = "<group>"; };
 		F6D202F421FCFAC30014AAEC /* SCSDKCreativeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKCreativeKit.framework; sourceTree = "<group>"; };
 		F6D202F521FCFAC30014AAEC /* SCSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKLoginKit.framework; sourceTree = "<group>"; };
-		F6D2032021FCFF410014AAEC /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D2032221FD03670014AAEC /* Snapchat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapchat.swift; sourceTree = "<group>"; };
 		F6D2032421FD0A720014AAEC /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
 		F6D2032621FD11F30014AAEC /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
@@ -122,6 +134,9 @@
 		F6D2033321FD1F530014AAEC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F6D2033521FD1F960014AAEC /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		F6D2033721FD322C0014AAEC /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		F6D2033921FD58A10014AAEC /* AddEventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventController.swift; sourceTree = "<group>"; };
+		F6D2036521FD86AF0014AAEC /* DateClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateClass.swift; sourceTree = "<group>"; };
+		F6D2036821FDA7930014AAEC /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,14 +144,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6D2032121FCFF410014AAEC /* GoogleUtilities.framework in Frameworks */,
+				F69D938421FDDFEE00710B7F /* SDWebImage.framework in Frameworks */,
+				F69D938221FDDFE500710B7F /* GoogleUtilities.framework in Frameworks */,
 				F6D2031721FCFB5D0014AAEC /* SCSDKBitmojiKit.framework in Frameworks */,
-				F6D2031B21FCFB5D0014AAEC /* SCSDKCreativeKit.framework in Frameworks */,
 				F6D2031221FCFAD80014AAEC /* Pods_OpenInviteUITests.framework in Frameworks */,
 				F6D2031021FCFAD80014AAEC /* Pods_OpenInviteTests.framework in Frameworks */,
+				F69D939621FDE7AB00710B7F /* Material.framework in Frameworks */,
 				F6D2031D21FCFB5D0014AAEC /* SCSDKLoginKit.framework in Frameworks */,
 				CEC6543AF874BFF9701AC773 /* Pods_OpenInvite.framework in Frameworks */,
 				F6D2031921FCFB5D0014AAEC /* SCSDKCoreKit.framework in Frameworks */,
+				F69D939521FDE7A500710B7F /* Material.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,8 +192,12 @@
 		4ED79E38B814AC86F0310DBF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F69D939421FDE7A500710B7F /* Material.framework */,
+				F69D938821FDE0AF00710B7F /* FirebaseFirestore.framework */,
+				F69D938621FDE0A000710B7F /* FirebaseCore.framework */,
+				F69D938021FDDFDA00710B7F /* SDWebImage.framework */,
+				F69D937E21FDDFC800710B7F /* GoogleUtilities.framework */,
 				D9DC77AA21FCFDC500D0D693 /* Firebase */,
-				F6D2032021FCFF410014AAEC /* GoogleUtilities.framework */,
 				F6D202F321FCFAC30014AAEC /* SCSDKBitmojiKit.framework */,
 				F6D202F221FCFAC30014AAEC /* SCSDKCoreKit.framework */,
 				F6D202F421FCFAC30014AAEC /* SCSDKCreativeKit.framework */,
@@ -219,6 +240,7 @@
 				F6D2032B21FD17340014AAEC /* Storyboards */,
 				F6D2032C21FD174C0014AAEC /* LogIn */,
 				F6D2032A21FD17210014AAEC /* Feed */,
+				F6D2036721FDA76E0014AAEC /* Map */,
 				F6D2033221FD1F390014AAEC /* Models */,
 			);
 			path = OpenInvite;
@@ -249,7 +271,6 @@
 				F698E51B21FCDF0500F9732E /* AppDelegate.swift */,
 				F6D2033721FD322C0014AAEC /* Helpers.swift */,
 				F698E52521FCDF0700F9732E /* Assets.xcassets */,
-				F698E52721FCDF0700F9732E /* LaunchScreen.storyboard */,
 				D9BBF4A521FD073000AEFC89 /* firestoreHelper.swift */,
 				F6D2032821FD16890014AAEC /* Extensions.swift */,
 				F6D2032621FD11F30014AAEC /* Constraints.swift */,
@@ -272,6 +293,7 @@
 			children = (
 				F6D2032D21FD175D0014AAEC /* Cells */,
 				F6D2032421FD0A720014AAEC /* FeedController.swift */,
+				F6D2033921FD58A10014AAEC /* AddEventController.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -303,10 +325,27 @@
 		F6D2033221FD1F390014AAEC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F6D2036421FD86860014AAEC /* Custom Classes */,
 				F6D2033321FD1F530014AAEC /* User.swift */,
 				F6D2033521FD1F960014AAEC /* Event.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F6D2036421FD86860014AAEC /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F6D2036521FD86AF0014AAEC /* DateClass.swift */,
+			);
+			path = "Custom Classes";
+			sourceTree = "<group>";
+		};
+		F6D2036721FDA76E0014AAEC /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				F6D2036821FDA7930014AAEC /* MapController.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +361,7 @@
 				F698E51621FCDF0500F9732E /* Resources */,
 				1DA28D080C03D233615BA57D /* [CP] Embed Pods Frameworks */,
 				F6D202FE21FCFAC40014AAEC /* Embed Frameworks */,
+				19E9B374C04A026A198BFAD1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -340,6 +380,8 @@
 				F698E52B21FCDF0700F9732E /* Sources */,
 				F698E52C21FCDF0700F9732E /* Frameworks */,
 				F698E52D21FCDF0700F9732E /* Resources */,
+				007C7A3A66ADDE9CB478E076 /* [CP] Embed Pods Frameworks */,
+				B312D342FD99F567F71469E5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -359,6 +401,8 @@
 				F698E53621FCDF0700F9732E /* Sources */,
 				F698E53721FCDF0700F9732E /* Frameworks */,
 				F698E53821FCDF0700F9732E /* Resources */,
+				7E1F2B81FE02DD123971A6BC /* [CP] Embed Pods Frameworks */,
+				45D44685788D6D701B155ACF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -442,6 +486,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		007C7A3A66ADDE9CB478E076 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInviteTests/Pods-OpenInviteTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		03A7BDD673B515FD123C81A2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -460,6 +519,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		19E9B374C04A026A198BFAD1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInvite/Pods-OpenInvite-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1DA28D080C03D233615BA57D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -469,21 +543,18 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-OpenInvite/Pods-OpenInvite-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
-				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
+				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
 				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
 				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${PODS_ROOT}/SnapSDK/SCSDKBitmojiKit.framework",
 				"${PODS_ROOT}/SnapSDK/SCSDKCoreKit.framework",
 				"${PODS_ROOT}/SnapSDK/SCSDKCreativeKit.framework",
 				"${PODS_ROOT}/SnapSDK/SCSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -491,27 +562,39 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCSDKBitmojiKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCSDKCreativeKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInvite/Pods-OpenInvite-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45D44685788D6D701B155ACF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInviteUITests/Pods-OpenInviteUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		707FB453E108D8474C5236F2 /* [CP] Check Pods Manifest.lock */ = {
@@ -530,6 +613,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E1F2B81FE02DD123971A6BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInviteUITests/Pods-OpenInviteUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B312D342FD99F567F71469E5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenInviteTests/Pods-OpenInviteTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E93A199C772ABC144E5D1E30 /* [CP] Check Pods Manifest.lock */ = {
@@ -565,10 +678,13 @@
 				D9BBF4A621FD073000AEFC89 /* firestoreHelper.swift in Sources */,
 				F6D2033621FD1F960014AAEC /* Event.swift in Sources */,
 				F6D2032721FD11F30014AAEC /* Constraints.swift in Sources */,
+				F6D2036921FDA7930014AAEC /* MapController.swift in Sources */,
 				F6D2033421FD1F530014AAEC /* User.swift in Sources */,
 				F6D2032F21FD17770014AAEC /* FeedCell.swift in Sources */,
+				F6D2036621FD86AF0014AAEC /* DateClass.swift in Sources */,
 				F6D2032321FD03670014AAEC /* Snapchat.swift in Sources */,
 				F6D2032921FD16890014AAEC /* Extensions.swift in Sources */,
+				F6D2033A21FD58A10014AAEC /* AddEventController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,14 +734,6 @@
 				F698E52021FCDF0500F9732E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F698E52721FCDF0700F9732E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F698E52821FCDF0700F9732E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -7,5 +7,9 @@
 //
 
 import Foundation
+import Firebase
 
 var user: User = User()
+let db = Firestore.firestore()
+var impactFeedback = UIImpactFeedbackGenerator()
+var notificationFeedback = UINotificationFeedbackGenerator()

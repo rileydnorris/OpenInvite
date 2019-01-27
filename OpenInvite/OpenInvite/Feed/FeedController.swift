@@ -11,6 +11,7 @@ import SCSDKBitmojiKit
 import Firebase
 
 class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     @IBOutlet weak var tableView: UITableView!
     
     @IBAction func profileAction(_ sender: Any) {
@@ -18,27 +19,26 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var profileButton: UIButton!
     
-    var events: [Event] = []
-
+    var cardInfo: [(User, Event)] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let eventsRef = db.collection("events")
-        let listener = eventsRef.addSnapshotListener(updateEvents)
-        
-        
+        let _ = eventsRef.addSnapshotListener(updateEvents)
         
         setProfileImage()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
+        self.tabBarController?.tabBar.isHidden = false
     }
     
     func setProfileImage() {
         let url = URL(string: user.imageURL)
+        print(user.imageURL)
         if let data = try? Data(contentsOf: url!) { profileButton.setImage(UIImage(data: data), for: UIControl.State.normal) }
-        
     }
     
     func updateEvents(snapshot : QuerySnapshot?, error : Error?) {
@@ -47,23 +47,26 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return
         }
         
-        events.removeAll()
+        cardInfo.removeAll()
         for doc in documents {
             let data = doc.data()
             let event = Event(data)
-            events.append(event)
+            getDocumentByID("users", data["hostID"] as! String) { (document, error) in
+                let userData = document?.data()
+                let user = User(userData ?? [:])
+                self.cardInfo.append((user, event))
+                self.tableView.reloadData()
+            }
         }
-        
-        self.tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return events.count
+        return cardInfo.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "feedCell", for: indexPath) as! FeedCell
-        cell.configure(event: events[indexPath.row])
+        cell.configure(event: cardInfo[indexPath.row].1, eventUser: cardInfo[indexPath.row].0)
         return cell
     }
 }

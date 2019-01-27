@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import MapKit
 
 // MARK: - UIView
 
@@ -144,6 +145,103 @@ extension Date {
         dateFormatter.dateFormat = "h:mm a"
         dateFormatter.timeZone = TimeZone.current
         return dateFormatter.string(from: self)
+    }
+}
+
+// MARK: - UILabel
+
+extension UILabel {
+    var defaultFont: UIFont? {
+        get { return self.font }
+        set { self.font = UIFont(name: "Avenir-Next", size: 14) }
+    }
+}
+
+// MARK: - UITextField
+
+extension UITextField {
+    
+    /// Adds done button to the keyboard
+    func addDoneButtonOnKeyboard() {
+        let doneToolbar: UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 50))
+        
+        let done: UIBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(self.doneButtonAction))
+        done.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Avenir Next", size: 17)!], for: UIControl.State.normal)
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        
+        var items: [UIBarButtonItem] = []
+        
+        items.append(flexSpace)
+        items.append(done)
+        
+        doneToolbar.items = items
+        doneToolbar.sizeToFit()
+        
+        doneToolbar.barTintColor = UIColor.white
+        doneToolbar.tintColor = UIColor.purple
+        self.inputAccessoryView = doneToolbar
+    }
+    
+    /// Obj-C function to use in the `addDoneButtonOnKeyboard` function
+    @objc func doneButtonAction() {
+        self.resignFirstResponder()
+    }
+    
+    /// Creates a storyboard option for the done button
+    @IBInspectable var doneAccessory: Bool {
+        get {
+            return self.doneAccessory
+        }
+        set (hasDone) {
+            if hasDone {
+                addDoneButtonOnKeyboard()
+            }
+        }
+    }
+}
+
+// MARK: - UIImage
+
+extension UIImageView {
+    
+    /// Loads an image from a URL into a UIImage
+    func loadFromURL(urlString: String) {
+        let url = URL(string: urlString)
+        if let data = try? Data(contentsOf: url!) { self.image = UIImage(data: data) }
+    }
+}
+
+// MARK: - AnnotationView
+
+extension MKAnnotationView {
+    
+    /// Loads an image from a URL into a UIImage
+    func loadFromURL(urlString: String) {
+        let url = URL(string: urlString)
+        if let data = try? Data(contentsOf: url!) { self.image = UIImage(data: data) }
+    }
+}
+
+// MARK: - UIViewController
+
+extension UIViewController {
+    
+    /// Displays an alert and screen shake on the current view controller
+    func handle(error: String) {
+        DispatchQueue.main.async {
+            // vibrate and shake screen
+            if let view: UIView = self.viewIfLoaded {
+                view.transform = CGAffineTransform(translationX: 30, y: 0)
+                UIView.animate(withDuration: 0.45, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 1, options: .curveEaseInOut, animations: {
+                    view.transform = CGAffineTransform.identity
+                }, completion: nil)
+            }
+            let alertController: UIAlertController = UIAlertController(title: "Whoops!", message: error, preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+            }))
+            self.present(alertController, animated: true, completion: nil)
+            notificationFeedback.notificationOccurred(.error)
+        }
     }
 }
 

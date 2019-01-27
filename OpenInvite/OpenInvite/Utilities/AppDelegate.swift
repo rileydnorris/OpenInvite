@@ -8,11 +8,7 @@
 
 import UIKit
 import CoreData
-
 import Firebase
-
-
-
 import SCSDKLoginKit
 
 
@@ -23,11 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         // Override point for customization after application launch.
         FirebaseApp.configure()
-//        getDocumentByID("users", "marSt6kcgXeLddRJfkcP") { (document, error) in
-//            print(document!.data())
-//        }
+        
+        self.window!.tintColor = UIColor(red: 185/255, green: 107/255, blue: 245/255, alpha: 1)
+
         return true
     }
 

@@ -21,6 +21,7 @@ class LogInController: UIViewController {
             DispatchQueue.main.sync {
                 Snapchat.retrieveData(completion: { _ in 
                     DispatchQueue.main.sync {
+                        notificationFeedback.notificationOccurred(.success)
                         self.performSegue(withIdentifier: "toFeed", sender: nil)
                     }
                 })
@@ -33,13 +34,13 @@ class LogInController: UIViewController {
         ConstraintHelper.set(on: loginButton, to: self.view, type: .leading, constant: 25)
         ConstraintHelper.set(on: loginButton, to: self.view, type: .trailing, constant: -25)
         ConstraintHelper.set(on: loginButton, to: self.view, type: .centerX, constant: 0)
-        ConstraintHelper.set(on: loginButton, to: self.view, type: .bottom, constant: -50)
-        ConstraintHelper.set(on: loginButton, to: nil, type: .height, constant: 70)
+        ConstraintHelper.set(on: loginButton, to: self.view, type: .bottom, constant: -75)
+        ConstraintHelper.set(on: loginButton, to: nil, type: .height, constant: 50)
         
         ConstraintHelper.set(on: bitmojiView, to: self.view, type: .centerX, constant: 0)
-        ConstraintHelper.set(on: bitmojiView, to: nil, type: .width, constant: 60)
-        ConstraintHelper.set(on: bitmojiView, to: nil, type: .height, constant: 60)
-        ConstraintHelper.set(on: bitmojiView, to: self.view, type: .top, constant: 100)
+        ConstraintHelper.set(on: bitmojiView, to: nil, type: .width, constant: 75)
+        ConstraintHelper.set(on: bitmojiView, to: nil, type: .height, constant: 75)
+        ConstraintHelper.set(on: bitmojiView, to: self.view, type: .top, constant: 95)
         
     }
 }

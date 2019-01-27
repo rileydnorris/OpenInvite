@@ -16,7 +16,9 @@ class Snapchat {
             if let error = error {
                 print(error.localizedDescription)
             } else {
-//                Snapchat.retrieveData()
+                Snapchat.retrieveData() { success in
+                    print(success)
+                }
             }
         }
     }
@@ -40,8 +42,12 @@ class Snapchat {
             
             if let externalId = me["externalId"] as? String {
                 print("External ID: \(externalId)\n\n")
-                user.id = externalId
+                user.id = externalId.replacingOccurrences(of: "/", with: "|")
             }
+            
+            
+            
+            user.save()
             completion(true)
             
         }, failure: { (error: Error?, isUserLoggedOut: Bool) in

@@ -7,11 +7,12 @@ target 'OpenInvite' do
 
   # Pods for OpenInvite
 
-pod 'MaterialComponents/TextFields'
 pod 'Firebase'
 pod 'Firebase/Firestore'
 pod 'PINCache'
 pod 'SnapSDK'
+pod 'Material'
+pod 'SDWebImage'
 
 
   target 'OpenInviteTests' do
