@@ -13,6 +13,7 @@ class FeedCell: UITableViewCell {
     @IBAction func acceptAction(_ sender: Any) {
     }
     
+    @IBOutlet weak var eventImage: UIImageView!
     @IBOutlet weak var userAvatar: UIImageView!
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var inviteTextLabel: UILabel!
@@ -29,6 +30,7 @@ class FeedCell: UITableViewCell {
         locationLabel.text = event.location
         
         setProfileImage(user)
+        setEventImage(event)
         
     }
     
@@ -43,6 +45,18 @@ class FeedCell: UITableViewCell {
         
         let url = URL(string: imageURL)
         if let data = try? Data(contentsOf: url!) { userAvatar.image = UIImage(data: data) }
+    }
+    
+    func setEventImage(_ event: Event) {
+        var imageURL = ""
+        if (event.imageURL.isEmpty) {
+            imageURL = "https://i.kym-cdn.com/entries/icons/original/000/016/212/manning.png"
+        } else {
+            imageURL = event.imageURL
+        }
+        
+        let url = URL(string: imageURL)
+        if let data = try? Data(contentsOf: url!) { eventImage.image = UIImage(data: data) }
     }
 }
 
