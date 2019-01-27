@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Firebase
 
 class Event {
     
@@ -19,10 +20,12 @@ class Event {
     var imageURL: String = ""
     
     init(_ data : [String : Any]) {
+        print(data)
         hostID = data["hostID"] as! String
         description = data["description"] as! String
         location = data["location"] as! String
-//        time = data["time"] as! Date
+        var fireTime = data["time"] as! Timestamp
+        time = Date(timeIntervalSince1970: TimeInterval(fireTime.seconds))
         imageURL = data["imageURL"] as! String
     }
     
